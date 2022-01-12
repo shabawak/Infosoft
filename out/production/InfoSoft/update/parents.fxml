@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="645.0" prefWidth="1140.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="update.ParentsController">
+   <opaqueInsets>
+      <Insets />
+   </opaqueInsets>
+   <children>
+      <Pane layoutX="10.0" layoutY="10.0" prefHeight="80.0" prefWidth="1333.0" style="-fx-background-color: #0078D7;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="15.0">
+         <children>
+            <FontAwesomeIconView fill="WHITE" glyphName="REFRESH" layoutX="30.0" layoutY="57.0" size="50" />
+            <Label layoutX="105.0" layoutY="11.0" text="PARENT'S DATA" textFill="WHITE">
+               <font>
+                  <Font size="41.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #ffffff;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="120.0">
+         <children>
+            <HBox layoutX="448.0" layoutY="25.0" prefHeight="50.0" prefWidth="640.0" spacing="5.0" AnchorPane.rightAnchor="52.0" AnchorPane.topAnchor="25.0">
+               <children>
+                  <Pane prefHeight="50.0" prefWidth="155.0">
+                     <children>
+                        <JFXButton fx:id="btn_RefreshTable" alignment="CENTER_RIGHT" buttonType="RAISED" layoutX="8.0" layoutY="13.0" prefHeight="25.0" prefWidth="140.0" style="-fx-background-radius: 20;" stylesheets="/home/sample_button_style.css" text="REFRESH TABLE" textFill="#311b92" />
+                        <FontAwesomeIconView fill="WHITE" glyphName="REFRESH" layoutX="20.0" layoutY="30.0" size="15" />
+                     </children>
+                  </Pane>
+                  <Pane prefHeight="50.0" prefWidth="149.0">
+                     <children>
+                        <JFXButton fx:id="btn_addParent" alignment="CENTER_RIGHT" buttonType="RAISED" layoutX="28.0" layoutY="13.0" prefHeight="25.0" prefWidth="101.0" style="-fx-background-radius: 20;" stylesheets="/home/sample_button_style.css" text="NEW" textFill="#311b92" visible="true" />
+                        <FontAwesomeIconView fill="WHITE" glyphName="USER_PLUS" layoutX="37.0" layoutY="32.0" size="20" />
+                     </children>
+                  </Pane>
+                  <Pane prefHeight="50.0" prefWidth="149.0">
+                     <children>
+                        <JFXButton fx:id="btn_UpdateParent" alignment="CENTER_RIGHT" buttonType="RAISED" disable="true" layoutX="37.0" layoutY="13.0" prefHeight="25.0" prefWidth="101.0" style="-fx-background-radius: 20;" stylesheets="/home/sample_button_style.css" text="UPDATE" />
+                        <FontAwesomeIconView fill="WHITE" glyphName="USER" layoutX="44.0" layoutY="32.0" size="20" />
+                     </children>
+                  </Pane>
+                  <Pane prefHeight="50.0" prefWidth="149.0">
+                     <children>
+                        <JFXButton fx:id="btn_deleteParent" alignment="CENTER_RIGHT" buttonType="RAISED" disable="true" layoutX="34.0" layoutY="13.0" prefHeight="25.0" prefWidth="101.0" style="-fx-background-radius: 20;" stylesheets="/home/sample_button_style.css" text="DELETE" textFill="#311b92" />
+                        <FontAwesomeIconView fill="WHITE" glyphName="USER_TIMES" layoutX="44.0" layoutY="32.0" size="20" />
+                     </children>
+                  </Pane>
+               </children>
+            </HBox>
+            <JFXTextField fx:id="searchField" focusColor="#6d3bf5" labelFloat="true" layoutX="29.0" layoutY="47.0" prefHeight="25.0" prefWidth="267.0" promptText="Search" style="-fx-background-radius: 20;" unFocusColor="#b518a5" AnchorPane.leftAnchor="29.0" AnchorPane.topAnchor="47.0" />
+         </children>
+      </AnchorPane>
+      <TableView fx:id="Table_View" layoutX="40.0" layoutY="168.0" prefHeight="400.0" prefWidth="1100.0" style="-fx-border-color: #0078D7;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="205.0">
+         <columns>
+            <TableColumn fx:id="Column_ID" prefWidth="54.0" text="ID" />
+            <TableColumn fx:id="Column_F_LastName" prefWidth="97.0" text="F-LASTNAME" />
+            <TableColumn fx:id="Column_F_FirstName" prefWidth="114.0" text="F-FIRSTNAME" />
+            <TableColumn fx:id="Column_F_PHONE" prefWidth="127.0" text="F-PHONE" />
+            <TableColumn fx:id="Column_F_EMAIL" prefWidth="149.0" text="F-EMAIL" />
+            <TableColumn fx:id="Column_M_LASTNAME" prefWidth="149.0" text="M-LASTNAME" />
+            <TableColumn fx:id="Column_M_FIRSTNAME" minWidth="0.0" prefWidth="141.0" text="M-FIRSTNAME" />
+            <TableColumn fx:id="Column_M_PHONE" prefWidth="109.0" text="M-PHONE" />
+            <TableColumn fx:id="Colun_M_EMAIL" prefWidth="177.0" text="M-EMAIL" />
+         </columns>
+      </TableView>
+   </children>
+   <padding>
+      <Insets bottom="20.0" left="10.0" right="10.0" />
+   </padding>
+</AnchorPane>

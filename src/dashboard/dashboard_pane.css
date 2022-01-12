@@ -1,0 +1,24 @@
+.pane_total:hover
+{
+-fx-background-color : #64b5f6;
+}
+.pane_active:hover
+{
+-fx-background-color : #64b5f6;
+}
+.pane_dropped:hover
+{
+-fx-background-color : #64b5f6;
+}
+.pane_male:hover
+{
+-fx-background-color : #64b5f6;
+}
+.pane_female:hover
+{
+-fx-background-color : #64b5f6;
+}
+.pane_users:hover
+{
+-fx-background-color : #64b5f6;
+}

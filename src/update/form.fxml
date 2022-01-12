@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<StackPane fx:id="sp_stackPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="682.0" prefWidth="632.0" style="-fx-border-color: #FF8F00;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="update.FormController">
+    <children>
+        <AnchorPane fx:id="anchorpane_window" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="682.0" prefWidth="632.0">
+            <children>
+                <Pane prefHeight="56.0" prefWidth="632.0" style="-fx-background-color: #0078D7;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                      <Label alignment="CENTER" layoutY="19.0" prefHeight="32.0" prefWidth="632.0" text="STUDENT FORM" textAlignment="CENTER" textFill="WHITE">
+                          <font>
+                              <Font name="System Bold" size="22.0" />
+                          </font>
+                      </Label>
+               </children></Pane>
+                <ScrollPane layoutY="67.0" opacity="0.87" pannable="true" prefHeight="615.0" prefWidth="632.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="67.0">
+                    <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="713.0" prefWidth="620.0" style="-fx-background-color: #FFFFFF;">
+                            <children>
+                                <Label alignment="CENTER" layoutX="4.0" layoutY="144.0" prefHeight="27.0" prefWidth="632.0" text="STUDENT INFORMATION" textAlignment="CENTER" textFill="#0078d7" underline="true" AnchorPane.leftAnchor="-1.0" AnchorPane.rightAnchor="-11.0" AnchorPane.topAnchor="139.0">
+                                    <font>
+                                        <Font size="16.0" />
+                                    </font>
+                                </Label>
+                                <FontAwesomeIconView fill="#0078d7" glyphName="GRADUATION_CAP" layoutX="253.0" layoutY="93.0" size="100" AnchorPane.leftAnchor="253.0" AnchorPane.rightAnchor="238.42857360839844" AnchorPane.topAnchor="7.285713195800781">
+                                    <effect>
+                                        <Glow />
+                                    </effect></FontAwesomeIconView>
+                                <ImageView fx:id="image_view" fitHeight="129.0" fitWidth="113.0" layoutX="463.0" layoutY="79.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="/update/userImage.png" />
+                                    </image>
+                                </ImageView>
+                        <HBox layoutX="37.0" layoutY="187.0">
+                           <children>
+                                      <JFXTextField fx:id="textField_ID" depthTest="ENABLE" editable="false" labelFloat="true" prefHeight="31.0" prefWidth="68.0" promptText="ID" visible="false">
+                                          <font>
+                                              <Font size="15.0" />
+                                          </font>
+                                      </JFXTextField>
+                              <JFXTextField fx:id="textField_parentID" depthTest="ENABLE" editable="false" labelFloat="true" layoutX="10.0" layoutY="10.0" prefHeight="31.0" prefWidth="68.0" promptText="ID" visible="false">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </JFXTextField>
+                           </children>
+                        </HBox>
+                                <JFXTextField fx:id="textField_firstName" labelFloat="true" layoutX="37.0" layoutY="238.0" prefHeight="25.0" prefWidth="216.0" promptText="Firstname">
+                                    <font>
+                                        <Font size="14.0" />
+                                    </font>
+                                </JFXTextField>
+                                <JFXTextField fx:id="textField_lastName" labelFloat="true" layoutX="37.0" layoutY="293.0" prefHeight="25.0" prefWidth="235.0" promptText="Lastname">
+                                    <font>
+                                        <Font size="14.0" />
+                                    </font>
+                                </JFXTextField>
+                                <JFXTextField fx:id="textField_residence" labelFloat="true" layoutX="37.0" layoutY="393.0" prefHeight="25.0" prefWidth="236.0" promptText="Residence">
+                                    <font>
+                                        <Font size="14.0" />
+                                    </font>
+                                </JFXTextField>
+                                <JFXTextField fx:id="textField_LandMark" labelFloat="true" layoutX="36.0" layoutY="444.0" prefHeight="30.0" prefWidth="359.0" promptText="Landmark">
+                                    <font>
+                                        <Font size="14.0" />
+                                    </font>
+                                </JFXTextField>
+                                <JFXTextField fx:id="textField_religion" labelFloat="true" layoutX="351.0" layoutY="393.0" prefHeight="30.0" prefWidth="224.0" promptText="Religion">
+                                    <font>
+                                        <Font size="14.0" />
+                                    </font>
+                                </JFXTextField>
+                                <JFXTextField fx:id="textField_lastSchoolAttended" labelFloat="true" layoutX="35.0" layoutY="545.0" prefHeight="30.0" prefWidth="362.0" promptText="Last School Attended">
+                                    <font>
+                                        <Font size="14.0" />
+                                    </font>
+                                </JFXTextField>
+                        <HBox layoutX="351.0" layoutY="696.0" spacing="20.0" AnchorPane.bottomAnchor="49.0" AnchorPane.rightAnchor="53.0">
+                           <children>
+                                      <JFXButton fx:id="btn_UpdateTable" buttonType="RAISED" onAction="#buttonUpdateActionPerform" prefHeight="25.0" prefWidth="89.0" stylesheets="/home/sample_button_style.css" text="UPDATE" textFill="#311b92" />
+                                      <JFXButton fx:id="btn_NRecord" buttonType="RAISED" onAction="#addNewRecord" prefHeight="25.0" prefWidth="107.0" stylesheets="/home/sample_button_style.css" text="NEW RECORD" textFill="#311b92" />
+                           </children>
+                        </HBox>
+                                <JFXDatePicker fx:id="dob_DatePicker" editable="false" layoutX="35.0" layoutY="336.0" prefHeight="25.0" prefWidth="182.0" promptText="Date of Birth" />
+                                <JFXButton fx:id="btn_chooseImage" buttonType="RAISED" layoutX="317.0" layoutY="183.0" onAction="#chooseImage" prefHeight="32.0" prefWidth="101.0" stylesheets="/home/sample_button_style.css" text="Choose Photo" textFill="#311b92" />
+                                <JFXComboBox fx:id="status_combo" labelFloat="true" layoutX="325.0" layoutY="297.0" prefHeight="25.0" prefWidth="85.0" promptText="Status" />
+                                <JFXComboBox fx:id="gender_Combo" labelFloat="true" layoutX="478.0" layoutY="297.0" prefHeight="25.0" prefWidth="95.0" promptText="Gender" />
+                                <JFXComboBox fx:id="class_Combo" labelFloat="true" layoutX="477.0" layoutY="240.0" prefHeight="25.0" prefWidth="96.0" promptText="Class" />
+                                <Label layoutX="35.0" layoutY="503.0" prefHeight="20.0" prefWidth="131.0" text="Date of Admission : ">
+                                    <font>
+                                        <Font size="14.0" />
+                                    </font>
+                                </Label>
+                                <Label fx:id="lbl_doa" layoutX="172.0" layoutY="503.0" prefHeight="20.0" prefWidth="87.0">
+                                    <font>
+                                        <Font size="14.0" />
+                                    </font>
+                                </Label>
+                        <Label layoutX="282.0" layoutY="505.0" text="CURRENT YEAR : " />
+                        <Label layoutX="455.0" layoutY="505.0" text="PREV YEAR : " />
+                        <Label fx:id="lbl_cYear" layoutX="377.0" layoutY="506.0" prefHeight="17.0" prefWidth="43.0" />
+                        <Label fx:id="lbl_pYear" layoutX="532.0" layoutY="505.0" prefHeight="17.0" prefWidth="40.0" />
+                            </children>
+                            <padding>
+                                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                            </padding>
+                        </AnchorPane>
+                    </content>
+                </ScrollPane>
+                <Label fx:id="lbl_addminName" layoutX="463.0" layoutY="22.0" textFill="WHITE" />
+            </children>
+        </AnchorPane>
+    </children>
+</StackPane>

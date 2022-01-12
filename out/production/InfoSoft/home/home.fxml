@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTabPane?>
+<?import de.jensd.fx.glyphs.materialicons.MaterialIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="parent" focusTraversable="true" maxHeight="-Infinity" maxWidth="-Infinity" opacity="0.95" prefHeight="646.0" prefWidth="1159.0" style="-fx-border-color: #0078D7;" styleClass="parent" stylesheets="/home/controlboxStyles.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="home.HomeController">
+    <children>
+        <MenuBar layoutX="1.0" layoutY="39.0" prefHeight="38.0" prefWidth="783.0" styleClass="menubar" stylesheets="/home/controlboxStyles.css" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="376.0" AnchorPane.topAnchor="38.0">
+            <menus>
+                <Menu fx:id="menuItem_edit" mnemonicParsing="false" text="Edit">
+                    <items>
+                        <MenuItem fx:id="MenuItem_settings" mnemonicParsing="false" text="Preferences" />
+                  <MenuItem fx:id="resetItem" mnemonicParsing="false" text="Reset Options" />
+                    </items>
+                </Menu>
+            <Menu fx:id="menuItem_modify" mnemonicParsing="false" text="Modify" visible="false">
+               <items>
+                  <MenuItem fx:id="modify_item_1" mnemonicParsing="false" text="Admin Credentials" />
+               </items>
+            </Menu>
+                <Menu mnemonicParsing="false" text="Help">
+                    <items>
+                        <MenuItem fx:id="guideItem" mnemonicParsing="false" text="Guide" />
+                        <MenuItem fx:id="aboutItem" mnemonicParsing="false" text="About infoSOFT" />
+                    </items>
+                </Menu>
+            </menus>
+        </MenuBar>
+
+        <JFXTabPane fx:id="tabPane" layoutX="1.0" layoutY="74.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="599.0" prefWidth="1159.0" stylesheets="/home/tabStyle.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="74.0">
+            <tabs>
+                <Tab fx:id="tab_Overview" text="Overview">
+                    <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="1350.0">
+                            <children>
+                                <BorderPane fx:id="bp_Overview" layoutX="140.0" layoutY="145.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                            </children>
+                        </AnchorPane>
+                    </content>
+                </Tab>
+                <Tab fx:id="tab_StudentInfo" text="Student Info">
+                    <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0">
+                            <children>
+                                <TabPane layoutX="2.0" layoutY="-2.0" prefHeight="413.0" prefWidth="498.0" style="-fx-tab-max-height: 30;" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                    <tabs>
+                                        <Tab style="-fx-background-color: #82B1FF;" text="INFORMATION">
+                                 <content>
+                                    <BorderPane fx:id="bp_StudentInfo" prefHeight="235.0" prefWidth="259.0" />
+                                 </content>
+                                        </Tab>
+                                        <Tab style="-fx-background-color: #9C27B0;" text="RESULTS">
+                                 <content>
+                                    <TabPane prefHeight="200.0" prefWidth="200.0" side="LEFT" style="-fx-tab-max-height: 30;" styleClass="tab" tabClosingPolicy="UNAVAILABLE">
+                                      <tabs>
+                                        <Tab style="-fx-background-color: #26C6DA;" text="PRIMARY">
+                                          <content>
+                                            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                                   <children>
+                                                      <BorderPane fx:id="bp_StudentInfo_RESULT_P" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                                                   </children>
+                                                </AnchorPane>
+                                          </content>
+                                        </Tab>
+                                        <Tab style="-fx-background-color: #0288d1;" text="JHS">
+                                          <content>
+                                            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                                   <children>
+                                                      <BorderPane fx:id="bp_StudentInfo_RESULT_JHS" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                                                   </children>
+                                                </AnchorPane>
+                                          </content>
+                                        </Tab>
+                                      </tabs>
+                                    </TabPane>
+                                 </content>
+                                        </Tab>
+                                    </tabs>
+                                </TabPane>
+                            </children>
+                        </AnchorPane>
+                    </content>
+                </Tab>
+                <Tab fx:id="tab_Update" text="PARENT/Student Management">
+                    <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0">
+                     <children>
+                        <TabPane prefHeight="200.0" prefWidth="200.0" side="LEFT" style="-fx-tab-max-height: 30;" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                          <tabs>
+                            <Tab style="-fx-background-color: #0288D1;" text="PARENT DATA">
+                              <content>
+                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                       <children>
+                                          <BorderPane fx:id="bp_parentUpdate" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                                       </children>
+                                    </AnchorPane>
+                              </content>
+                            </Tab>
+                            <Tab style="-fx-background-color: #515151; -fx-hover-color: #40C4FF;" text="STUDENT DATA">
+                              <content>
+                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                       <children>
+                                          <BorderPane fx:id="bp_UserUpdate" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                                       </children>
+                                    </AnchorPane>
+                              </content>
+                            </Tab>
+                          </tabs>
+                        </TabPane>
+                     </children>
+                        </AnchorPane>
+                    </content>
+                </Tab>
+                <Tab fx:id="tab_UserManagement" text="User Management">
+                    <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefWidth="200.0">
+                            <children>
+                                <BorderPane fx:id="bp_UserManagement" layoutX="340.0" layoutY="219.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                            </children>
+                        </AnchorPane>
+                    </content>
+                </Tab>
+                <Tab fx:id="tab_Logs" text="User Logs">
+                    <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefWidth="200.0">
+                            <children>
+                                <BorderPane fx:id="bp_UserLogs" layoutX="340.0" layoutY="219.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                            </children>
+                        </AnchorPane>
+                    </content>
+                </Tab>
+            </tabs>
+        </JFXTabPane>
+        <Pane layoutX="779.0" layoutY="37.0" prefHeight="37.0" prefWidth="376.0" style="-fx-background-color: #EFEFEF;" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="37.0">
+            <children>
+                <HBox layoutX="42.0" layoutY="9.0" spacing="5.0">
+                    <children>
+                        <Label fx:id="logedUser_name">
+                            <font>
+                                <Font size="14.0" />
+                            </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                        </Label>
+                    </children>
+                </HBox>
+                <JFXButton fx:id="btn_signOut" buttonType="RAISED" layoutX="269.0" layoutY="5.0" prefHeight="30.0" prefWidth="72.0" style="-fx-background-radius: 20;" stylesheets="/home/sample_button_style.css" text="SignOut" textFill="#311b92" />
+            </children>
+        </Pane>
+        <HBox alignment="CENTER_RIGHT" layoutX="234.0" prefHeight="37.0" prefWidth="925.0" style="-fx-background-color: #ffffff;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <children>
+              <HBox alignment="CENTER_LEFT" prefHeight="37.0" prefWidth="928.0" spacing="5.0" HBox.hgrow="ALWAYS">
+                  <children>
+                  <ImageView fitHeight="15.0" fitWidth="16.0" pickOnBounds="true" HBox.hgrow="NEVER">
+                     <image>
+                        <Image url="/infosoft_logo.png" />
+                     </image>
+                  </ImageView>
+      
+                      <Label prefHeight="37.0" prefWidth="322.0" text="infoSOFT">
+                          <font>
+                              <Font size="14.0" />
+                          </font>
+                      </Label>
+                  </children>
+               <padding>
+                  <Insets left="5.0" />
+               </padding>
+              </HBox>
+            <Label fx:id="btn_Restore" alignment="CENTER" contentDisplay="CENTER" layoutX="639.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#restoreButtonAction" prefHeight="20.0" prefWidth="42.0" styleClass="btn_Restore" stylesheets="/home/controlboxStyles.css">
+               <graphic>
+                  <MaterialIconView glyphName="FULLSCREEN_EXIT" size="15" />
+               </graphic>
+            </Label>
+            <Label fx:id="btn_Max" alignment="CENTER" contentDisplay="CENTER" layoutX="597.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#maxButtonAction" prefHeight="20.0" prefWidth="42.0" styleClass="btn_Max" stylesheets="/home/controlboxStyles.css">
+               <graphic>
+                  <MaterialIconView glyphName="FULLSCREEN" size="15" />
+               </graphic>
+            </Label>
+                <Label fx:id="btn_Min" alignment="CENTER" contentDisplay="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#minButtonAction" prefHeight="20.0" prefWidth="42.0" styleClass="btn_Min">
+                    <graphic>
+                        <MaterialIconView glyphName="REMOVE" size="15" />
+                    </graphic>
+                </Label>
+                <Label fx:id="btn_Close" alignment="CENTER" contentDisplay="CENTER" layoutX="678.0" layoutY="20.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#closeButtonActionPerform" prefHeight="20.0" prefWidth="42.0" styleClass="btn_Close">
+                    <graphic>
+                        <MaterialIconView glyphName="CLOSE" size="15" />
+                    </graphic>
+                </Label>
+            </children>
+            <padding>
+                <Insets right="5.0" />
+            </padding>
+        </HBox>
+    </children>
+</AnchorPane>

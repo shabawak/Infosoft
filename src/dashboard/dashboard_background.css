@@ -1,0 +1,73 @@
+
+.lbl_reload
+{
+
+-fx-background-color: #0078D7;
+}
+.lbl_reload:hover
+{
+-fx-background-color :#00E5FF;
+}
+.blb_totalStudent
+{
+-fx-background-color : #0078D7;
+}
+.blb_totalStudent:hover
+{
+-fx-background-color : #00E5FF;
+}
+
+.lbl_activeStudent
+{
+-fx-background-color : #0078D7;
+}
+.lbl_activeStudent:hover
+{
+-fx-background-color : #00E5FF;
+}
+
+.lbl_droppedOut
+{
+-fx-background-color : #0078D7;
+}
+.lbl_droppedOut:hover
+{
+-fx-background-color : #00E5FF;
+}
+
+.lbl_totalMale
+{
+-fx-background-color : #0078D7;
+}
+.lbl_totalMale:hover
+{
+-fx-background-color : #00E5FF;
+}
+
+.lbl_totalFemale
+{
+-fx-background-color : #0078D7;
+}
+.lbl_totalFemale:hover
+{
+-fx-background-color : #00E5FF;
+}
+
+.lbl_totalUsers
+{
+-fx-background-color : #0078D7;
+}
+.lbl_totalUsers:hover
+{
+-fx-background-color : #00E5FF;
+}
+
+/*.label
+{
+
+-fx-background-color:  #0078D7;
+}
+.label:hover
+{
+-fx-background-color: #29B6F6;
+}*/

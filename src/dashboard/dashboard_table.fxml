@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="parent" prefHeight="400.0" prefWidth="735.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dashboard.DashboardTableController">
+   <children>
+      <AnchorPane layoutX="22.0" layoutY="34.0" prefHeight="32.0" prefWidth="713.0" style="-fx-background-color: #0078D7;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label fx:id="label" alignment="CENTER" layoutX="212.0" layoutY="6.0" prefHeight="17.0" prefWidth="173.0" textAlignment="CENTER" textFill="WHITE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="12.0" layoutY="47.0" prefHeight="343.0" prefWidth="713.0" style="-fx-background-color: #ffffff;" AnchorPane.bottomAnchor="11.0" AnchorPane.leftAnchor="11.0" AnchorPane.rightAnchor="11.0" AnchorPane.topAnchor="46.0">
+         <children>
+            <TableView fx:id="table" layoutX="14.0" layoutY="41.0" prefHeight="270.0" prefWidth="713.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="41.0">
+              <columns>
+                <TableColumn fx:id="column_id" prefWidth="138.0" text="ID#" />
+                  <TableColumn fx:id="column_lastName" prefWidth="138.0" text="SURNAME" />
+                  <TableColumn fx:id="column_firstName" prefWidth="138.0" text="FIRST NAME" />
+                  <TableColumn fx:id="column_gender" prefWidth="138.0" text="GENDER" />
+                  <TableColumn fx:id="column_class" prefWidth="138.0" text="CLASS" />
+              </columns>
+            </TableView>
+            <HBox alignment="CENTER" layoutX="102.0" layoutY="2.0" spacing="10.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="2.0">
+               <children>
+                  <JFXButton fx:id="btn_printTotal" buttonType="RAISED" prefHeight="25.0" prefWidth="102.0" stylesheets="/home/sample_button_style.css" text="PRINT" visible="false" />
+                  <JFXButton fx:id="btn_printActive" buttonType="RAISED" layoutX="10.0" layoutY="10.0" prefHeight="25.0" prefWidth="102.0" stylesheets="/home/sample_button_style.css" text="PRINT" />
+                  <JFXButton fx:id="btn_printInactive" buttonType="RAISED" layoutX="112.0" layoutY="10.0" prefHeight="25.0" prefWidth="102.0" stylesheets="/home/sample_button_style.css" text="PRINT" />
+                  <JFXButton fx:id="btn_printMale" buttonType="RAISED" layoutX="214.0" layoutY="10.0" prefHeight="25.0" prefWidth="102.0" stylesheets="/home/sample_button_style.css" text="PRINT" />
+                  <JFXButton fx:id="btn_printFemale" buttonType="RAISED" layoutX="316.0" layoutY="10.0" prefHeight="25.0" prefWidth="102.0" stylesheets="/home/sample_button_style.css" text="PRINT" />
+                  <JFXButton buttonType="RAISED" disable="true" layoutX="418.0" layoutY="10.0" prefHeight="25.0" prefWidth="102.0" stylesheets="/home/sample_button_style.css" text="PRINT" visible="false" />
+               </children>
+            </HBox>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXProgressBar?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.SVGPath?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="278.0" prefWidth="600.0" style="-fx-background-color: #039BE5;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="loader.LoaderController">
+   <children>
+      <JFXProgressBar fx:id="pb" layoutX="14.0" layoutY="290.0" prefHeight="1.0" prefWidth="587.0" stylesheets="/loader/loader_style.css" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
+      <SVGPath content="M 427.377,537.914 C 459.55,560.454 460.029,576.741 451.153,591.186 C 428.613,623.361 412.326,623.838 397.881,614.962 C 383.142,604.635 375.054,595.622 371.472,587.496 C 371.421,592.886 369.5,597.908 366.54,602.723 C 353.897,620.771 343.221,628.847 333.736,630.891 C 336.951,631.724 340.048,633.17 343.064,635.026 C 375.239,657.564 375.716,673.852 366.84,688.296 C 344.301,720.47 328.014,720.949 313.569,712.073 C 298.83,701.746 290.744,692.733 287.16,684.608 C 287.108,689.996 285.188,695.017 282.229,699.835 C 259.69,732.008 243.402,732.487 228.957,723.611 C 196.785,701.071 196.305,684.784 205.181,670.339 C 227.721,638.165 244.007,637.687 258.453,646.563 C 273.192,656.887 281.281,665.901 284.862,674.026 C 284.915,668.637 286.835,663.616 289.794,658.802 C 302.438,640.752 313.114,632.677 322.599,630.633 C 319.384,629.8 316.287,628.354 313.27,626.499 C 281.097,603.961 280.617,587.673 289.493,573.229 C 312.032,541.055 328.32,540.576 342.764,549.452 C 357.504,559.777 365.591,568.791 369.175,576.916 C 369.228,571.526 371.147,566.506 374.106,561.69 C 396.645,529.517 412.932,529.038 427.377,537.914 Z" layoutX="-186.0" layoutY="-463.0">
+         <fill>
+            <LinearGradient cycleMethod="REPEAT" startY="1.0">
+               <stops>
+                  <Stop color="#33f6f6" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </fill>
+      </SVGPath>
+      <VBox alignment="CENTER" layoutX="293.0" layoutY="70.0" AnchorPane.leftAnchor="293.0" AnchorPane.rightAnchor="78.0" AnchorPane.topAnchor="70.0">
+         <children>
+            <HBox>
+               <children>
+                  <Label text="info">
+                     <font>
+                        <Font name="Impact" size="65.0" />
+                     </font>
+                  </Label>
+                  <Label text="SOFT" textFill="WHITE">
+                     <font>
+                        <Font name="Impact" size="65.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <Label text="Student Information System" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+      <Label layoutX="295.0" layoutY="177.0" prefHeight="27.0" prefWidth="70.0" text="v.2019.1" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="221.0" layoutY="240.0" text="Copyright © 2019  Wakies App Studio. All right reserved." textFill="WHITE" />
+   </children>
+</AnchorPane>

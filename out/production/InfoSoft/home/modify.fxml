@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="home.ModifyController">
+   <children>
+      <TableView fx:id="tableView_table1" layoutX="10.0" layoutY="178.0" prefHeight="149.0" prefWidth="580.0" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0">
+        <columns>
+          <TableColumn fx:id="table_coulumn_id" prefWidth="54.0" text="ID" />
+          <TableColumn fx:id="table_coulumn_fullName" prefWidth="142.0" text="FULL NAME" />
+            <TableColumn fx:id="table_coulumn_gender" prefWidth="58.0" text="GENDER" />
+            <TableColumn fx:id="table_coulumn_userName" prefWidth="100.0" text="USERNAME" />
+            <TableColumn fx:id="table_coulumn_passWord" prefWidth="102.0" text="PASSWORD" />
+            <TableColumn fx:id="table_coulumn_phone" prefWidth="123.0" text="PHONE" />
+        </columns>
+      </TableView>
+      <VBox layoutX="14.0" layoutY="68.0" prefHeight="166.0" prefWidth="580.0">
+         <children>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="5.0">
+               <children>
+                  <Pane>
+                     <children>
+                        <TextField fx:id="textField_id" editable="false" layoutY="15.0" promptText="ID" />
+                     </children>
+                  </Pane>
+                  <Pane layoutX="226.0" layoutY="10.0">
+                     <children>
+                        <TextField fx:id="textField_fullName" layoutY="15.0" promptText="FullName" />
+                     </children>
+                  </Pane>
+                  <Pane layoutX="151.0" layoutY="10.0">
+                     <children>
+                        <ComboBox fx:id="combo_gender" layoutY="14.0" prefWidth="150.0" promptText="Gender" />
+                     </children>
+                  </Pane>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="100.0" prefWidth="200.0" spacing="5.0">
+               <children>
+                  <Pane>
+                     <children>
+                        <TextField fx:id="textField_userName" layoutY="15.0" promptText="UserName" />
+                     </children>
+                  </Pane>
+                  <Pane layoutX="226.0" layoutY="10.0">
+                     <children>
+                        <TextField fx:id="textField_passWord" layoutY="15.0" promptText="Password" />
+                     </children>
+                  </Pane>
+                  <Pane layoutX="151.0" layoutY="10.0">
+                     <children>
+                        <TextField fx:id="textField_phone" layoutY="15.0" promptText="Phone" />
+                     </children>
+                  </Pane>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="75.0" prefWidth="580.0">
+               <children>
+                  <Pane fx:id="btn_refreshTable" prefHeight="42.0" prefWidth="59.0" styleClass="btn_querry" stylesheets="@controlboxStyles.css">
+                     <children>
+                        <FontAwesomeIconView fontSmoothingType="LCD" glyphName="REFRESH" layoutX="20.0" layoutY="29.0" size="25" textAlignment="CENTER">
+                           <fill>
+                              <RadialGradient centerX="0.5055555555555555" centerY="0.49523809523809526" cycleMethod="REFLECT" focusAngle="18.43" focusDistance="-0.046511627906976716" radius="1.0">
+                                 <stops>
+                                    <Stop color="#1abcbf" />
+                                    <Stop color="WHITE" offset="1.0" />
+                                 </stops>
+                              </RadialGradient>
+                           </fill>
+                        </FontAwesomeIconView>
+                     </children>
+                  </Pane>
+                  <Pane fx:id="btn_Insertquerry" prefHeight="42.0" prefWidth="59.0" styleClass="btn_querry" stylesheets="@controlboxStyles.css">
+                     <children>
+                        <FontAwesomeIconView fontSmoothingType="LCD" glyphName="PLUS_CIRCLE" layoutX="20.0" layoutY="29.0" size="25" textAlignment="CENTER">
+                           <fill>
+                              <RadialGradient centerX="0.5055555555555555" centerY="0.49523809523809526" cycleMethod="REFLECT" focusAngle="18.43" focusDistance="-0.046511627906976716" radius="0.686046511627907">
+                                 <stops>
+                                    <Stop color="#2ee002" />
+                                    <Stop color="#76da4f" offset="1.0" />
+                                 </stops>
+                              </RadialGradient>
+                           </fill>
+                        </FontAwesomeIconView>
+                     </children>
+                  </Pane>
+                  <Pane fx:id="btn_updateAdmin" layoutX="300.0" layoutY="10.0" prefHeight="42.0" prefWidth="59.0" styleClass="btn_querry" stylesheets="@controlboxStyles.css">
+                     <children>
+                        <FontAwesomeIconView fontSmoothingType="LCD" glyphName="UNDO" layoutX="20.0" layoutY="29.0" size="25" textAlignment="CENTER">
+                           <fill>
+                              <RadialGradient centerX="0.5055555555555555" centerY="0.49523809523809526" cycleMethod="REFLECT" focusAngle="18.43" focusDistance="-0.046511627906976716" radius="0.686046511627907">
+                                 <stops>
+                                    <Stop color="#2ee002" />
+                                    <Stop color="#76da4f" offset="1.0" />
+                                 </stops>
+                              </RadialGradient>
+                           </fill>
+                        </FontAwesomeIconView>
+                     </children>
+                  </Pane>
+                  <Pane fx:id="btn_deleteAdmin" layoutX="330.0" layoutY="10.0" prefHeight="42.0" prefWidth="59.0" styleClass="btn_querry" stylesheets="@controlboxStyles.css">
+                     <children>
+                        <FontAwesomeIconView fontSmoothingType="LCD" glyphName="MINUS_CIRCLE" layoutX="20.0" layoutY="29.0" size="25" textAlignment="CENTER">
+                           <fill>
+                              <RadialGradient centerX="0.5055555555555555" centerY="0.49523809523809526" cycleMethod="REFLECT" focusAngle="18.43" focusDistance="-0.046511627906976716" radius="0.686046511627907">
+                                 <stops>
+                                    <Stop color="#2ee002" />
+                                    <Stop color="#76da4f" offset="1.0" />
+                                 </stops>
+                              </RadialGradient>
+                           </fill>
+                        </FontAwesomeIconView>
+                     </children>
+                  </Pane>
+                  <Pane fx:id="btn_clear" layoutX="182.0" layoutY="10.0" prefHeight="42.0" prefWidth="59.0" styleClass="btn_querry" stylesheets="@controlboxStyles.css">
+                     <children>
+                        <FontAwesomeIconView fontSmoothingType="LCD" glyphName="DOT_CIRCLE_ALT" layoutX="20.0" layoutY="29.0" size="25" textAlignment="CENTER">
+                           <fill>
+                              <RadialGradient centerX="0.5055555555555555" centerY="0.49523809523809526" cycleMethod="REFLECT" focusAngle="18.43" focusDistance="-0.046511627906976716" radius="1.0">
+                                 <stops>
+                                    <Stop color="#39eb4a" />
+                                    <Stop color="#39e80d" offset="1.0" />
+                                 </stops>
+                              </RadialGradient>
+                           </fill>
+                        </FontAwesomeIconView>
+                     </children>
+                  </Pane>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

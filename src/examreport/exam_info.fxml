@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import de.jensd.fx.glyphs.materialicons.MaterialIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="650.0" prefWidth="1140.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="examreport.ExamInfoController">
+    <children>
+        <Pane prefHeight="80.0" prefWidth="1140.0" style="-fx-background-color: #26C6DA;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="15.0">
+            <children>
+                <Label alignment="CENTER" layoutX="104.0" layoutY="1.0" prefHeight="73.0" prefWidth="609.0" text="PRIMARY-EXAMINATION RESULT" textAlignment="CENTER" textFill="WHITE">
+                    <font>
+                        <Font size="41.0" />
+                    </font>
+                </Label>
+                <MaterialIconView fill="WHITE" glyphName="ASSIGNMENT" layoutX="41.0" layoutY="67.0" size="60" />
+            </children>
+        </Pane>
+        <AnchorPane layoutX="60.0" layoutY="120.0" prefHeight="490.0" prefWidth="1040.0" style="-fx-background-color: #ffffff;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="120.0">
+            <children>
+                <TableView fx:id="resultTable" layoutX="47.0" layoutY="47.0" onMouseClicked="#tabeleRowSelect" prefHeight="439.0" prefWidth="1100.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="71.0">
+                    <columns>
+                        <TableColumn fx:id="column_sName" prefWidth="114.0" text="SURNAME" />
+                  <TableColumn fx:id="column_fName" prefWidth="127.0" text="FIRST NAME" />
+                        <TableColumn fx:id="column_StudentID" prefWidth="42.0" text="S.ID" visible="false" />
+                        <TableColumn fx:id="column_Class" prefWidth="77.0" text="CLASS" />
+                        <TableColumn fx:id="column_Term" prefWidth="76.0" text="TERM" />
+                        <TableColumn fx:id="column_SubjectID" prefWidth="46.0" text="SUB.ID" visible="false" />
+                        <TableColumn fx:id="column_RecordId" prefWidth="45.0" text="R.ID" visible="false" />
+                        <TableColumn fx:id="column_Math" prefWidth="58.0" text="MATH" />
+                  <TableColumn fx:id="column_maths_cs" prefWidth="75.0" text="MATH_CS" />
+                        <TableColumn fx:id="column_Eng" prefWidth="46.0" text="ENG" />
+                  <TableColumn fx:id="column_eng_cs" prefWidth="75.0" text="ENG_CS" />
+                        <TableColumn fx:id="column_Sci" prefWidth="46.0" text="SCI" />
+                  <TableColumn fx:id="column_sci_cs" prefWidth="75.0" text="SCI_CS" />
+                        <TableColumn fx:id="column_RME" prefWidth="46.0" text="RME" />
+                  <TableColumn fx:id="column_rme_cs" prefWidth="75.0" text="RME_CS" />
+                        <TableColumn fx:id="column_Fante" prefWidth="60.0" text="FANTE" />
+                  <TableColumn fx:id="column_fante_cs" prefWidth="75.0" text="FANTE_CS" />
+                        <TableColumn fx:id="column_SocialStudies" text="S.STUDIES" />
+                  <TableColumn fx:id="column_sStud_cs" prefWidth="75.0" text="SSTUD_CS" />
+                        <TableColumn fx:id="column_BDT" prefWidth="52.0" text="BDT" />
+                  <TableColumn fx:id="column_bdt_cs" prefWidth="75.0" text="BDT_CS" />
+                        <TableColumn fx:id="column_Numeracy" prefWidth="83.0" text="NUMERACY" />
+                  <TableColumn fx:id="column_numeracy_cs" prefWidth="75.0" text="NUMERACY_CS" />
+                        <TableColumn fx:id="column_CreativeArt" prefWidth="75.0" text="C.ART" />
+                  <TableColumn fx:id="column_cArt_cs" prefWidth="75.0" text="C.ART_CS" />
+                        <TableColumn fx:id="column_L_iterature" prefWidth="99.0" text="L.LITERACY" />
+                  <TableColumn fx:id="column_Literacy_cs" prefWidth="75.0" text="LITERACY_CS" />
+                        <TableColumn fx:id="column_Citizenship_EDU" minWidth="5.0" prefWidth="67.0" text="C.EDU" />
+                  <TableColumn fx:id="column_cEdu_cs" prefWidth="75.0" text="C.EDU_CS" />
+                        <TableColumn fx:id="column_Environmental_Stud" prefWidth="117.0" text="E.STUDIES" />
+                  <TableColumn fx:id="column_eStud_cs" prefWidth="75.0" text="E.STUDIES_CS" />
+                        <TableColumn fx:id="column_ICT" prefWidth="75.0" text="ICT" />
+                  <TableColumn fx:id="column_ICT_cs" prefWidth="75.0" text="ICT_CS" />
+                    </columns>
+                </TableView>
+            <JFXTextField fx:id="search" labelFloat="true" layoutX="60.0" layoutY="21.0" prefHeight="25.0" prefWidth="186.0" promptText="Search Student" />
+            </children>
+        </AnchorPane>
+      <HBox layoutX="659.0" layoutY="132.0" spacing="20.0" AnchorPane.rightAnchor="217.0" AnchorPane.topAnchor="132.0">
+         <children>
+            <Pane prefHeight="37.0" prefWidth="150.0">
+               <children>
+                  <JFXButton fx:id="btn_RefreshTable" alignment="CENTER_RIGHT" buttonType="RAISED" layoutY="1.0" prefHeight="37.0" prefWidth="150.0" style="-fx-background-radius: 20;" stylesheets="/home/sample_button_style.css" text="REFRESH TABLE" />
+                  <FontAwesomeIconView fill="WHITE" glyphName="REFRESH" layoutX="20.0" layoutY="24.0" size="15" />
+               </children>
+            </Pane>
+            <Pane prefHeight="37.0" prefWidth="94.0">
+               <children>
+                  <JFXButton fx:id="btn_UpdateResult" alignment="CENTER_RIGHT" buttonType="RAISED" disable="true" layoutY="1.0" prefHeight="37.0" prefWidth="94.0" style="-fx-background-radius: 20;" stylesheets="/home/sample_button_style.css" text="UPDATE" />
+                  <MaterialIconView fill="WHITE" glyphName="EVENT_NOTE" layoutX="14.0" layoutY="28.0" size="18" />
+               </children>
+            </Pane>
+            <Pane layoutX="180.0" layoutY="10.0" prefHeight="37.0" prefWidth="94.0">
+               <children>
+                  <JFXButton fx:id="btn_deleteResult" alignment="CENTER_RIGHT" buttonType="RAISED" disable="true" layoutY="1.0" prefHeight="37.0" prefWidth="94.0" style="-fx-background-radius: 20;" stylesheets="/home/sample_button_style.css" text="DELETE" />
+                  <MaterialIconView fill="WHITE" glyphName="CLEAR" layoutX="14.0" layoutY="28.0" size="18" />
+               </children>
+            </Pane>
+         </children>
+      </HBox>
+    </children>
+   <padding>
+      <Insets bottom="20.0" left="10.0" right="10.0" />
+   </padding>
+</AnchorPane>

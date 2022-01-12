@@ -1,0 +1,52 @@
+
+.parent{
+    -fx-background-color: #ffffff;
+
+}
+.btn_Close{
+-fx-background-color : transparent;
+
+}
+.btn_Close:hover
+{
+-fx-background-color : #FF1744;
+}
+.btn_Min
+{
+-fx-background-color : transparent;
+}
+
+.btn_Min:hover
+{
+-fx-background-color : #EFEFEF;
+}
+.btn_Max
+{
+-fx-background-color : transparent;
+}
+
+.btn_Max:hover
+{
+-fx-background-color : #EFEFEF;
+}
+.btn_Restore
+{
+-fx-background-color : transparent;
+}
+
+.btn_Restore:hover
+{
+-fx-background-color : #EFEFEF;
+}
+.menubar
+{
+     /*-fx-text-fill : #ff3d00;*/
+     -fx-background-color: transparent;
+}
+.btn_querry:hover
+{
+-fx-background-color : #EFEFEF;
+}
+
+
+

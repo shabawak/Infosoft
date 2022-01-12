@@ -1,0 +1,836 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.8.0.final using JasperReports Library version 6.8.0-2ed8dfabb690ff337a5797129f2cd92902b0c87b  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="reportCard" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="10098865-b081-48c3-9081-c63cf35de37b">
+	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="DataAdapter.xml"/>
+	<property name="background.image.path" value="D:\My files\Programs\RUTH\App\graduation_cap.png"/>
+	<property name="background.image.widht" value="591"/>
+	<property name="background.image.height" value="442"/>
+	<property name="background.image.y" value="190"/>
+	<property name="background.image.alpha" value="0.07"/>
+	<parameter name="mathTotal" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="engTotal" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="sciTotal" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="rmeTotal" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="fanteTotal" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="socialTotal" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="bdtTotal" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="ictTotal" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="numeracyTotal" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="artTotal" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="literacyTotal" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="citizenshipTotal" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="eStudiesTotal" class="java.lang.String" isForPrompting="false"/>
+	<queryString language="SQL">
+		<![CDATA[SELECT "jhsSubjectTable"."StudentID",
+	"jhsSubjectTable"."Class",
+	"jhsSubjectTable"."Term",
+	"jhsSubjectTable"."Year",
+	"jhsSubjectTable"."Mathematics",
+	"jhsSubjectTable"."MathClassScore",
+	"jhsSubjectTable"."English",
+	"jhsSubjectTable"."EnglishClassScore",
+	"jhsSubjectTable"."Science",
+	"jhsSubjectTable"."ScienceClassScore",
+	"jhsSubjectTable"."RME",
+	"jhsSubjectTable"."RmeClassScore",
+	"jhsSubjectTable"."Fante",
+	"jhsSubjectTable"."FanteClassScore",
+	"jhsSubjectTable"."SocialStudies",
+	"jhsSubjectTable"."SStudiesClassScore",
+	"jhsSubjectTable"."BDT",
+	"jhsSubjectTable"."BdtClassScore",
+	"jhsSubjectTable"."ICT",
+	"jhsSubjectTable"."IctClassScore",
+	"jhsSubjectTable"."Numeracy",
+	"jhsSubjectTable"."NumeracyClassScore",
+	"jhsSubjectTable"."CreativeArt",
+	"jhsSubjectTable"."CartClassScore",
+	"jhsSubjectTable"."Language_Literacy",
+	"jhsSubjectTable"."LiteracyClassScore",
+	"jhsSubjectTable"."CitizenshipEducation",
+	"jhsSubjectTable"."CeduClassScore",
+	"jhsSubjectTable"."EnvironmentalStudies",
+	"jhsSubjectTable"."eEduClassScore",
+	"jhsSubjectTable"."TotalMarks",
+	"StudentData"."firstName",
+	"StudentData"."lastName"
+FROM "jhsSubjectTable",
+	"StudentData"]]>
+	</queryString>
+	<field name="StudentID" class="java.lang.Object">
+		<property name="com.jaspersoft.studio.field.label" value="StudentID"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="jhsSubjectTable"/>
+	</field>
+	<field name="Class" class="java.lang.Object">
+		<property name="com.jaspersoft.studio.field.label" value="Class"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="jhsSubjectTable"/>
+	</field>
+	<field name="Term" class="java.lang.Object">
+		<property name="com.jaspersoft.studio.field.label" value="Term"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="jhsSubjectTable"/>
+	</field>
+	<field name="Year" class="java.lang.Object">
+		<property name="com.jaspersoft.studio.field.label" value="Year"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="jhsSubjectTable"/>
+	</field>
+	<field name="Mathematics" class="java.lang.Object">
+		<property name="com.jaspersoft.studio.field.label" value="Mathematics"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="jhsSubjectTable"/>
+	</field>
+	<field name="MathClassScore" class="java.lang.Object">
+		<property name="com.jaspersoft.studio.field.label" value="MathClassScore"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="jhsSubjectTable"/>
+	</field>
+	<field name="English" class="java.lang.Object">
+		<property name="com.jaspersoft.studio.field.label" value="English"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="jhsSubjectTable"/>
+	</field>
+	<field name="EnglishClassScore" class="java.lang.Object">
+		<property name="com.jaspersoft.studio.field.label" value="EnglishClassScore"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="jhsSubjectTable"/>
+	</field>
+	<field name="Science" class="java.lang.Object">
+		<property name="com.jaspersoft.studio.field.label" value="Science"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="jhsSubjectTable"/>
+	</field>
+	<field name="ScienceClassScore" class="java.lang.Object">
+		<property name="com.jaspersoft.studio.field.label" value="ScienceClassScore"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="jhsSubjectTable"/>
+	</field>
+	<field name="RME" class="java.lang.Object">
+		<property name="com.jaspersoft.studio.field.label" value="RME"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="jhsSubjectTable"/>
+	</field>
+	<field name="RmeClassScore" class="java.lang.Object">
+		<property name="com.jaspersoft.studio.field.label" value="RmeClassScore"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="jhsSubjectTable"/>
+	</field>
+	<field name="Fante" class="java.lang.Object">
+		<property name="com.jaspersoft.studio.field.label" value="Fante"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="jhsSubjectTable"/>
+	</field>
+	<field name="FanteClassScore" class="java.lang.Object">
+		<property name="com.jaspersoft.studio.field.label" value="FanteClassScore"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="jhsSubjectTable"/>
+	</field>
+	<field name="SocialStudies" class="java.lang.Object">
+		<property name="com.jaspersoft.studio.field.label" value="SocialStudies"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="jhsSubjectTable"/>
+	</field>
+	<field name="SStudiesClassScore" class="java.lang.Object">
+		<property name="com.jaspersoft.studio.field.label" value="SStudiesClassScore"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="jhsSubjectTable"/>
+	</field>
+	<field name="BDT" class="java.lang.Object">
+		<property name="com.jaspersoft.studio.field.label" value="BDT"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="jhsSubjectTable"/>
+	</field>
+	<field name="BdtClassScore" class="java.lang.Object">
+		<property name="com.jaspersoft.studio.field.label" value="BdtClassScore"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="jhsSubjectTable"/>
+	</field>
+	<field name="ICT" class="java.lang.Object">
+		<property name="com.jaspersoft.studio.field.label" value="ICT"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="jhsSubjectTable"/>
+	</field>
+	<field name="IctClassScore" class="java.lang.Object">
+		<property name="com.jaspersoft.studio.field.label" value="IctClassScore"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="jhsSubjectTable"/>
+	</field>
+	<field name="Numeracy" class="java.lang.Object">
+		<property name="com.jaspersoft.studio.field.label" value="Numeracy"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="jhsSubjectTable"/>
+	</field>
+	<field name="NumeracyClassScore" class="java.lang.Object">
+		<property name="com.jaspersoft.studio.field.label" value="NumeracyClassScore"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="jhsSubjectTable"/>
+	</field>
+	<field name="CreativeArt" class="java.lang.Object">
+		<property name="com.jaspersoft.studio.field.label" value="CreativeArt"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="jhsSubjectTable"/>
+	</field>
+	<field name="CartClassScore" class="java.lang.Object">
+		<property name="com.jaspersoft.studio.field.label" value="CartClassScore"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="jhsSubjectTable"/>
+	</field>
+	<field name="Language_Literacy" class="java.lang.Object">
+		<property name="com.jaspersoft.studio.field.label" value="Language_Literacy"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="jhsSubjectTable"/>
+	</field>
+	<field name="LiteracyClassScore" class="java.lang.Object">
+		<property name="com.jaspersoft.studio.field.label" value="LiteracyClassScore"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="jhsSubjectTable"/>
+	</field>
+	<field name="CitizenshipEducation" class="java.lang.Object">
+		<property name="com.jaspersoft.studio.field.label" value="CitizenshipEducation"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="jhsSubjectTable"/>
+	</field>
+	<field name="CeduClassScore" class="java.lang.Object">
+		<property name="com.jaspersoft.studio.field.label" value="CeduClassScore"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="jhsSubjectTable"/>
+	</field>
+	<field name="EnvironmentalStudies" class="java.lang.Object">
+		<property name="com.jaspersoft.studio.field.label" value="EnvironmentalStudies"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="jhsSubjectTable"/>
+	</field>
+	<field name="eEduClassScore" class="java.lang.Object">
+		<property name="com.jaspersoft.studio.field.label" value="eEduClassScore"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="jhsSubjectTable"/>
+	</field>
+	<field name="TotalMarks" class="java.lang.Object">
+		<property name="com.jaspersoft.studio.field.label" value="TotalMarks"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="jhsSubjectTable"/>
+	</field>
+	<field name="firstName" class="java.lang.Object">
+		<property name="com.jaspersoft.studio.field.label" value="firstName"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="StudentData"/>
+	</field>
+	<field name="lastName" class="java.lang.Object">
+		<property name="com.jaspersoft.studio.field.label" value="lastName"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="StudentData"/>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="15" splitType="Stretch">
+			<textField pattern="MMMMM dd, yyyy">
+				<reportElement x="410" y="-14" width="100" height="22" uuid="30b90b5d-dc32-431d-aa6f-e792bec93e29"/>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+			<rectangle>
+				<reportElement x="520" y="-15" width="40" height="21" backcolor="#189DF5" uuid="2e35996c-dbd5-43c7-be4f-709bc71dee43"/>
+			</rectangle>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="163" splitType="Stretch">
+			<image>
+				<reportElement x="20" y="0" width="120" height="90" uuid="42327a96-04e3-4113-bd7f-b70cb6b8dff8"/>
+				<imageExpression><![CDATA["infosoft_logo.png"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="150" y="19" width="150" height="30" uuid="ba6806f5-0ba8-46e7-aecc-7671fffa0ed9"/>
+				<textElement>
+					<font fontName="Times New Roman" size="20" isBold="true"/>
+				</textElement>
+				<text><![CDATA[END OF TERM]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="390" y="19" width="90" height="30" uuid="22c5c30e-4159-4e2f-b38a-87dd9f808062"/>
+				<textElement>
+					<font fontName="Times New Roman" size="20" isBold="true"/>
+				</textElement>
+				<text><![CDATA[REPORT]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="20" y="110" width="40" height="20" uuid="294eaf7d-f7f3-4428-ac90-256bac694741">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="359d65dd-33df-467d-b782-2df943d74df9"/>
+				</reportElement>
+				<textElement>
+					<font fontName="Times New Roman" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Name]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="260" y="110" width="50" height="19" uuid="6927f803-0582-44bb-8185-54fd5e71ca4f">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="f3360a6b-7156-4345-8d6f-4067485becc5"/>
+				</reportElement>
+				<textElement>
+					<font fontName="Times New Roman" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Class :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="20" y="130" width="70" height="20" uuid="b75df226-3e4c-4b5e-a350-ddb915f0a8ae"/>
+				<textElement>
+					<font fontName="Times New Roman" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[FirstName]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="90" y="130" width="20" height="20" uuid="6836c13c-adfa-44c4-b14b-a0bff2934ec2"/>
+				<textElement>
+					<font fontName="Times New Roman" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="90" y="110" width="20" height="20" uuid="a10dacfe-f000-40aa-9bc5-ddd102af64c5"/>
+				<textElement>
+					<font fontName="Times New Roman" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="390" y="111" width="80" height="20" uuid="4f07a236-fb30-41aa-a46e-7bb7e9034325">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="7e2b0772-e933-496d-939f-b0a18279ddd1"/>
+				</reportElement>
+				<textElement>
+					<font fontName="Times New Roman" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[StudentID :]]></text>
+			</staticText>
+			<line>
+				<reportElement x="150" y="49" width="320" height="1" uuid="632a4c33-7977-4c76-8a6d-054e0a8ca496"/>
+			</line>
+			<textField>
+				<reportElement x="110" y="110" width="120" height="19" uuid="8756abfb-fe6d-4117-bf6c-b57fca884120">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="a540d633-4381-4751-909e-b813e742d445"/>
+				</reportElement>
+				<textElement>
+					<font fontName="Times New Roman" size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{firstName}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="110" y="131" width="120" height="19" uuid="ddb6c535-a7eb-4e0b-b387-d3a7bb43ba15">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="6833a1ef-f2a3-4630-9295-0e04c929faf4"/>
+				</reportElement>
+				<textElement>
+					<font fontName="Times New Roman" size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{lastName}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="310" y="111" width="70" height="18" uuid="addb75dc-fbc2-42af-a260-58a1e15f3880">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="7174a3ae-a429-4d98-8e87-c19b3017ad48"/>
+				</reportElement>
+				<textElement>
+					<font fontName="Times New Roman" size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{Class}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="300" y="20" width="90" height="29" uuid="3b9d7781-eba0-4dad-9889-158c1b7c1bb2">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="2db2be04-4c88-4791-9907-8b961c34ed41"/>
+				</reportElement>
+				<textElement>
+					<font fontName="Times New Roman" size="20" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{Term}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="470" y="111" width="70" height="20" uuid="8ee2aa8f-185a-4866-a515-95c10873c0a2">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="6d168346-acac-4697-a384-cf7083723e69"/>
+				</reportElement>
+				<textElement>
+					<font fontName="Times New Roman" size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{StudentID}]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="78" splitType="Stretch">
+			<line>
+				<reportElement x="10" y="10" width="534" height="2" uuid="67e48e35-2820-4b4f-a12a-243e922daede"/>
+			</line>
+			<staticText>
+				<reportElement x="20" y="40" width="100" height="30" uuid="6b5e5427-73eb-4fb2-9feb-8ccb31b22e39"/>
+				<textElement textAlignment="Left">
+					<font fontName="Times New Roman" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Subjects]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="400" y="40" width="120" height="30" uuid="cb7508be-acc0-46d9-9907-9dc5d224a48f"/>
+				<textElement textAlignment="Center">
+					<font fontName="Times New Roman" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Total Marks/Grades]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="140" y="40" width="100" height="30" uuid="8cc85998-36b6-4f20-9e36-d77581cfc294"/>
+				<textElement textAlignment="Center">
+					<font fontName="Times New Roman" size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Class Score (50%)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="260" y="40" width="100" height="30" uuid="30b3fab4-5d81-4a38-be9e-123a5a59ab39"/>
+				<textElement textAlignment="Center">
+					<font fontName="Times New Roman" size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Exam Score (50%)]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="311" splitType="Stretch">
+			<staticText>
+				<reportElement x="20" y="10" width="100" height="20" uuid="ec0b0beb-e582-45d5-b255-8146a9625bd6">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="f6c5e67c-4a29-4eff-af19-c7a56c77e70e"/>
+				</reportElement>
+				<textElement>
+					<font fontName="Times New Roman" size="11"/>
+				</textElement>
+				<text><![CDATA[Mathematics]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="20" y="30" width="100" height="20" uuid="6fb3db19-6d35-45db-a8a3-ef856ab4f67d">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="5df77a56-9d0c-47e1-bd4d-4c54dcfe6b9d"/>
+				</reportElement>
+				<textElement>
+					<font fontName="Times New Roman" size="11"/>
+				</textElement>
+				<text><![CDATA[English]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="20" y="50" width="100" height="20" uuid="522d535a-582f-4600-a3f8-81d0d022015a">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="0e4986d1-6c24-410d-bfe6-24a85c2f427e"/>
+				</reportElement>
+				<textElement>
+					<font fontName="Times New Roman" size="11"/>
+				</textElement>
+				<text><![CDATA[Science]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="20" y="72" width="100" height="18" uuid="7691f552-6a21-4fec-8b01-43edb9b9652c">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="ea349b20-947b-4c8b-a945-876a09907d69"/>
+				</reportElement>
+				<textElement>
+					<font fontName="Times New Roman" size="11"/>
+				</textElement>
+				<text><![CDATA[RME]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="20" y="90" width="100" height="20" uuid="7cb5d316-5da6-43c3-b98a-a6fb3117f613">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="63836361-7c1d-4f2b-beb2-8ffcfdb26ce6"/>
+				</reportElement>
+				<textElement>
+					<font fontName="Times New Roman" size="11"/>
+				</textElement>
+				<text><![CDATA[Fante]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="20" y="112" width="100" height="18" uuid="e53ab938-451d-4821-9a42-1b7f2e2e5b67">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="e7c3a794-07fe-4baa-a7b8-2e61767c39e5"/>
+				</reportElement>
+				<textElement>
+					<font fontName="Times New Roman" size="11"/>
+				</textElement>
+				<text><![CDATA[SocialStudies]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="20" y="132" width="100" height="18" uuid="99622124-14ff-4c7a-9e45-e67dc397a923">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="1f606d7e-4b2f-4221-a8dc-de569cf93ab6"/>
+				</reportElement>
+				<textElement>
+					<font fontName="Times New Roman" size="11"/>
+				</textElement>
+				<text><![CDATA[BDT]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="20" y="152" width="100" height="18" uuid="b219f93b-e54f-471d-a12d-1e88b4662412">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="a254dd10-7f2a-49b2-92c8-d9bd24a6794f"/>
+				</reportElement>
+				<textElement>
+					<font fontName="Times New Roman" size="11"/>
+				</textElement>
+				<text><![CDATA[ICT]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="20" y="170" width="100" height="20" uuid="8ef99aed-1a21-4291-b43a-abeeb978cb7e">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="689f4e87-3649-49ff-b338-b39aee4492bd"/>
+				</reportElement>
+				<textElement>
+					<font fontName="Times New Roman" size="11"/>
+				</textElement>
+				<text><![CDATA[Numeracy]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="20" y="190" width="100" height="20" uuid="b12185d0-bed8-4442-a7e6-a72b0e86b4dd">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="1e904fa4-6ee4-4e18-871f-84c809013ae9"/>
+				</reportElement>
+				<textElement>
+					<font fontName="Times New Roman" size="11"/>
+				</textElement>
+				<text><![CDATA[CreativeArt]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="20" y="210" width="100" height="20" uuid="aa080764-256d-4cbb-9fac-ef9bb510a614">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="b3b01d04-266d-4db7-802b-268460a2e0f5"/>
+				</reportElement>
+				<textElement>
+					<font fontName="Times New Roman" size="11"/>
+				</textElement>
+				<text><![CDATA[Language_Literacy]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="20" y="230" width="100" height="20" uuid="5ba935f4-fd44-4168-9695-5f205254a4ff">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="e295bd1b-00eb-47b1-bc46-16a8c14fa3ab"/>
+				</reportElement>
+				<textElement>
+					<font fontName="Times New Roman" size="11"/>
+				</textElement>
+				<text><![CDATA[CitizenshipEducation]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="20" y="250" width="100" height="20" uuid="3fa79cd0-2d43-42e1-b12e-7e3520483c34">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="289eb7fe-6b79-4e0a-a4bd-c4fd11bed93d"/>
+				</reportElement>
+				<textElement>
+					<font fontName="Times New Roman" size="11"/>
+				</textElement>
+				<text><![CDATA[EnvironmentalStudies]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="140" y="10" width="100" height="20" uuid="aab19fe3-b478-45ba-87eb-2ebba6a07a22">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="2465a78f-1495-4053-8e12-5e2deda00b81"/>
+				</reportElement>
+				<textElement textAlignment="Center">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{Mathematics}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="260" y="10" width="100" height="20" uuid="a124cbb3-fb32-4c90-b1c4-896028bf5de2">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="0e829ee2-b905-4af0-b2ed-cb455ca31a15"/>
+				</reportElement>
+				<textElement textAlignment="Center">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{MathClassScore}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="140" y="30" width="100" height="20" uuid="bd07febc-3850-4224-bf81-e74bd01ab9f0">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="23c622f8-6f83-4b75-85eb-ad2d50b4d9ec"/>
+				</reportElement>
+				<textElement textAlignment="Center">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{English}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="260" y="30" width="100" height="20" uuid="767e70d5-1c48-4fe2-99aa-80632517d7fe">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="788153da-39e6-49b8-bf1b-e95fb4a596ca"/>
+				</reportElement>
+				<textElement textAlignment="Center">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{EnglishClassScore}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="140" y="50" width="100" height="20" uuid="fbffee16-5b03-465e-93b9-3e49afabef65">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="20f58291-7ac0-4b1f-8bf1-b3417b4a6b7f"/>
+				</reportElement>
+				<textElement textAlignment="Center">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{Science}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="260" y="50" width="100" height="20" uuid="cca9e5ac-ef3b-404b-b73e-fafbcb9bc814">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="90545809-f34c-4929-9a1e-dd5040b94cbc"/>
+				</reportElement>
+				<textElement textAlignment="Center">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{ScienceClassScore}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="140" y="70" width="100" height="18" uuid="e9192eb8-ade9-4f5c-8510-ebdfbd23134e">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="c3b732da-a0f3-4db8-8b83-81dd9c9014e3"/>
+				</reportElement>
+				<textElement textAlignment="Center">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{RME}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="260" y="70" width="100" height="20" uuid="7ba1e5dd-9ab6-4a2c-8b9e-98c9c47c1b7a">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="7017045a-0717-47a1-8873-97cec0ebd47e"/>
+				</reportElement>
+				<textElement textAlignment="Center">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{RmeClassScore}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="140" y="88" width="100" height="20" uuid="0b00e764-58bc-447f-b117-afb2331b6249">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="97aded87-803b-45f6-99ba-4f88167a1adb"/>
+				</reportElement>
+				<textElement textAlignment="Center">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{Fante}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="260" y="90" width="100" height="20" uuid="11c17b5b-cf2f-4b1a-9f76-903a9a7bbb6a">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="2670b832-3201-4c8b-b974-5f4f1cbac5ca"/>
+				</reportElement>
+				<textElement textAlignment="Center">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{FanteClassScore}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="140" y="108" width="100" height="20" uuid="c97b56ec-033b-4e71-b3ef-79196584db96">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="785c4d3e-5a95-4504-b70e-e2a6a8517253"/>
+				</reportElement>
+				<textElement textAlignment="Center">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{SocialStudies}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="260" y="110" width="100" height="20" uuid="4ad3a752-d3fd-40f5-bf53-fed73083f4fc">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="839de6be-c187-497b-a76e-c0593c7781b4"/>
+				</reportElement>
+				<textElement textAlignment="Center">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{SStudiesClassScore}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="140" y="130" width="100" height="20" uuid="fcab3970-deb0-4555-a197-221ab326f2df">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="ff461fea-d538-4f67-9156-a26d7f7c942e"/>
+				</reportElement>
+				<textElement textAlignment="Center">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{BDT}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="260" y="128" width="100" height="18" uuid="cd01dd98-82aa-4540-8b60-1d8051a18e26">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="a589d5df-7895-48c7-9e5c-82e472273920"/>
+				</reportElement>
+				<textElement textAlignment="Center">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{BdtClassScore}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="140" y="150" width="100" height="18" uuid="87f0eb63-19ad-4ee4-a81a-023a47c2b150">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="a89d5d2e-7c88-4131-aa7c-48030b2232bc"/>
+				</reportElement>
+				<textElement textAlignment="Center">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{ICT}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="260" y="146" width="100" height="18" uuid="a5bd2f0c-8cbf-4c1b-85d3-baa636794787">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="0b4795b2-37cf-40b5-9b88-ad43b54ce76f"/>
+				</reportElement>
+				<textElement textAlignment="Center">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{IctClassScore}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="140" y="168" width="100" height="21" uuid="ac0f0da9-ee99-43df-b40b-7d11c8aeb74d">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="518b9531-f1f7-408c-8590-a29c8d087b54"/>
+				</reportElement>
+				<textElement textAlignment="Center">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{Numeracy}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="260" y="164" width="100" height="24" uuid="e5012327-f727-46ca-a432-8961af626d5d">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="f391b6d6-2a61-45ae-99ad-cdb8fbb17efb"/>
+				</reportElement>
+				<textElement textAlignment="Center">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{NumeracyClassScore}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="140" y="190" width="100" height="20" uuid="0cb1a21a-47ba-4e02-b355-e1dcccd29ccb">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="f2455eaa-f86a-4551-a5d0-bf75440961eb"/>
+				</reportElement>
+				<textElement textAlignment="Center">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{CreativeArt}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="260" y="188" width="100" height="21" uuid="36f93b01-573d-4988-9c8d-9a22fa0b3a42">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="e518cffc-79ad-49bd-a02b-532a7955df06"/>
+				</reportElement>
+				<textElement textAlignment="Center">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{CartClassScore}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="140" y="209" width="100" height="20" uuid="21e4de1a-b09c-4252-8fe1-6dbd62b76754">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="9e960217-7768-4fed-9fc7-14d6b9bc7fc8"/>
+				</reportElement>
+				<textElement textAlignment="Center">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{Language_Literacy}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="260" y="210" width="100" height="19" uuid="1ff39445-2d55-4fa0-b31d-e391db3bbd44">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="1f6153a2-41bd-4aec-8597-e56c52451b9d"/>
+				</reportElement>
+				<textElement textAlignment="Center">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{LiteracyClassScore}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="140" y="229" width="100" height="20" uuid="9771bca9-a468-491d-87e5-9870579c81fb">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="14ba5b01-f318-4365-b980-8818c81a1db0"/>
+				</reportElement>
+				<textElement textAlignment="Center">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{CitizenshipEducation}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="260" y="230" width="100" height="19" uuid="6c7de205-abab-4c4e-b7ba-ca623d2ea262">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="a8f32f91-e949-4570-8f9b-b338dd3660e6"/>
+				</reportElement>
+				<textElement textAlignment="Center">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{CeduClassScore}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="140" y="249" width="100" height="20" uuid="cc9750ca-60e7-4e0a-9df6-129a02af7ca5">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="b3980f43-559c-4967-bc29-cbf2a2d64425"/>
+				</reportElement>
+				<textElement textAlignment="Center">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{EnvironmentalStudies}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="260" y="250" width="100" height="19" uuid="95135f79-d8ff-48ee-af06-fe0f1165916d">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="5136d41c-7a0d-4981-ab4f-667b41d7974a"/>
+				</reportElement>
+				<textElement textAlignment="Center">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{eEduClassScore}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="410" y="10" width="100" height="20" uuid="36782019-6465-4cd1-b639-fa8f6e7312fa"/>
+				<textElement textAlignment="Center">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{mathTotal}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="410" y="30" width="100" height="20" uuid="4d7fa424-091b-4d3d-b90b-33d1a549bb1d"/>
+				<textElement textAlignment="Center">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{engTotal}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="410" y="50" width="100" height="20" uuid="4535a291-5529-4b38-ad66-9f22a155a203"/>
+				<textElement textAlignment="Center">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{sciTotal}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="410" y="70" width="100" height="20" uuid="ffc63471-1d48-4392-ae6c-b262a680834e"/>
+				<textElement textAlignment="Center">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{rmeTotal}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="410" y="90" width="100" height="18" uuid="11948476-da02-4621-8bc3-8bd73bfb85e9"/>
+				<textElement textAlignment="Center">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{fanteTotal}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="410" y="108" width="100" height="20" uuid="2204d188-4562-435b-942b-a8da9821b6a1"/>
+				<textElement textAlignment="Center">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{socialTotal}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="410" y="130" width="100" height="15" uuid="65c6ba00-d40c-4e86-a155-0beb5e172660"/>
+				<textElement textAlignment="Center">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{bdtTotal}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="410" y="144" width="100" height="20" uuid="b8f9c45d-8c05-4237-b93f-3fc4ea629c28"/>
+				<textElement textAlignment="Center">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{ictTotal}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="410" y="163" width="100" height="25" uuid="6026e79f-1521-4ff2-bae1-6493d92243d4"/>
+				<textElement textAlignment="Center">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{numeracyTotal}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="410" y="189" width="100" height="20" uuid="ae0235d9-eec7-49c5-88b0-fabe46c20ff9"/>
+				<textElement textAlignment="Center">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{artTotal}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="410" y="210" width="100" height="20" uuid="e0f7e008-89a1-4fdb-8886-424d36620dc0"/>
+				<textElement textAlignment="Center">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{literacyTotal}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="410" y="230" width="100" height="20" uuid="a4f883e9-c26f-448e-8d9a-816ffab7f2d6"/>
+				<textElement textAlignment="Center">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{citizenshipTotal}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="410" y="250" width="100" height="19" uuid="dcfbaada-4368-4614-b4f4-f3471277dc37"/>
+				<textElement textAlignment="Center">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{eStudiesTotal}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement x="8" y="280" width="534" height="1" uuid="8a5dcd8d-5171-4820-9f60-66294e87eb0b"/>
+			</line>
+			<staticText>
+				<reportElement x="-2" y="281" width="554" height="21" uuid="58edf066-b25c-4cc7-98c9-1a6e4d974d9f"/>
+				<textElement textAlignment="Center">
+					<font size="12" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[powerd by infoSOFT]]></text>
+			</staticText>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="43" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch">
+			<textField>
+				<reportElement x="350" y="12" width="100" height="30" uuid="267340b2-b20b-4480-8f9c-fdfa147db6fe"/>
+				<textElement textAlignment="Right"/>
+				<textFieldExpression><![CDATA["Page " + $V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+			<textField evaluationTime="Report">
+				<reportElement x="450" y="12" width="100" height="30" uuid="ee7a5d27-c4df-4967-bc93-021b5baaf48c"/>
+				<textElement textAlignment="Left"/>
+				<textFieldExpression><![CDATA[" of " + $V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>

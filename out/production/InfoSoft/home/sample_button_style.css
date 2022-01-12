@@ -1,0 +1,23 @@
+.button:hover
+{
+	-fx-background-color : #2979FF;
+}
+/*.button:pressed
+{
+	-fx-background-color : #FFA726;
+}
+*/
+.button:disabled
+{
+    -fx-background-color : #AAAAAA;
+}
+
+.button
+{
+    -fx-text-fill : #FFFFFF;
+    -fx-background-color : #00B0FF;
+}
+.tab
+{
+       -fx-text-fill : #FFFFFF;
+}

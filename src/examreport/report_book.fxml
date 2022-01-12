@@ -1,0 +1,423 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="531.0" prefWidth="1161.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="examreport.ReportBookController">
+   <children>
+      <SplitPane dividerPositions="0.474090407938258" layoutX="-4.0" layoutY="-2.0" prefHeight="539.0" prefWidth="919.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <items>
+            <AnchorPane>
+               <children>
+                  <HBox prefHeight="537.0" prefWidth="583.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <AnchorPane prefHeight="529.0" prefWidth="546.0" HBox.hgrow="NEVER">
+                           <children>
+                              <VBox alignment="CENTER" layoutX="136.0" layoutY="47.0" prefHeight="200.0" prefWidth="100.0" spacing="5.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                 <children>
+                                    <Label alignment="CENTER" prefHeight="17.0" prefWidth="549.0" text="JHS LEVEL RESULTS" />
+                                    <TableView fx:id="JHSresultTable" VBox.vgrow="NEVER">
+                                       <columns>
+                                          <TableColumn fx:id="column_sName_JHS" prefWidth="114.0" text="SURNAME" />
+                                          <TableColumn fx:id="column_fName_JHS" prefWidth="127.0" text="FIRST NAME" />
+                                          <TableColumn fx:id="column_StudentID_JHS" prefWidth="42.0" text="S.ID" />
+                                          <TableColumn fx:id="column_Class_JHS" prefWidth="84.0" text="CLASS" />
+                                          <TableColumn fx:id="column_Term_JHS" prefWidth="69.0" text="TERM" />
+                                          <TableColumn fx:id="column_SubjectID_JHS" prefWidth="46.0" text="SUB.ID" />
+                                          <TableColumn fx:id="column_RecordId_JHS" prefWidth="45.0" text="R.ID" />
+                                          <TableColumn fx:id="column_Math_JHS" prefWidth="58.0" text="MATH" visible="false" />
+                                          <TableColumn fx:id="column_maths_cs_JHS" prefWidth="75.0" text="MATH_CS" visible="false" />
+                                          <TableColumn fx:id="column_Eng_JHS" prefWidth="46.0" text="ENG" visible="false" />
+                                          <TableColumn fx:id="column_eng_cs_JHS" prefWidth="75.0" text="ENG_CS" visible="false" />
+                                          <TableColumn fx:id="column_Sci_JHS" prefWidth="46.0" text="SCI" visible="false" />
+                                          <TableColumn fx:id="column_sci_cs_JHS" prefWidth="75.0" text="SCI_CS" visible="false" />
+                                          <TableColumn fx:id="column_RME_JHS" prefWidth="46.0" text="RME" visible="false" />
+                                          <TableColumn fx:id="column_rme_cs_JHS" prefWidth="75.0" text="RME_CS" visible="false" />
+                                          <TableColumn fx:id="column_Fante_JHS" prefWidth="60.0" text="FANTE" visible="false" />
+                                          <TableColumn fx:id="column_fante_cs_JHS" prefWidth="75.0" text="FANTE_CS" visible="false" />
+                                          <TableColumn fx:id="column_SocialStudies_JHS" text="S.STUDIES" visible="false" />
+                                          <TableColumn fx:id="column_sStud_cs_JHS" prefWidth="75.0" text="SSTUD_CS" visible="false" />
+                                          <TableColumn fx:id="column_BDT_JHS" prefWidth="52.0" text="BDT" visible="false" />
+                                          <TableColumn fx:id="column_bdt_cs_JHS" prefWidth="75.0" text="BDT_CS" visible="false" />
+                                          <TableColumn fx:id="column_Numeracy_JHS" prefWidth="83.0" text="NUMERACY" visible="false" />
+                                          <TableColumn fx:id="column_numeracy_cs_JHS" prefWidth="75.0" text="NUMERACY_CS" visible="false" />
+                                          <TableColumn fx:id="column_CreativeArt_JHS" prefWidth="75.0" text="C.ART" visible="false" />
+                                          <TableColumn fx:id="column_cArt_cs_JHS" prefWidth="75.0" text="C.ART_CS" visible="false" />
+                                          <TableColumn fx:id="column_L_iterature_JHS" prefWidth="99.0" text="L.LITERACY" visible="false" />
+                                          <TableColumn fx:id="column_Literacy_cs_JHS" prefWidth="75.0" text="LITERACY_CS" visible="false" />
+                                          <TableColumn fx:id="column_Citizenship_EDU_JHS" minWidth="5.0" prefWidth="67.0" text="C.EDU" visible="false" />
+                                          <TableColumn fx:id="column_cEdu_cs_JHS" prefWidth="75.0" text="C.EDU_CS" visible="false" />
+                                          <TableColumn fx:id="column_Environmental_Stud_JHS" prefWidth="117.0" text="E.STUDIES" visible="false" />
+                                          <TableColumn fx:id="column_eStud_cs_JHS" prefWidth="75.0" text="E.STUDIES_CS" visible="false" />
+                                          <TableColumn fx:id="column_ICT_JHS" prefWidth="75.0" text="ICT" visible="false" />
+                                          <TableColumn fx:id="column_ICT_cs_JHS" prefWidth="75.0" text="ICT_CS" visible="false" />
+                                       </columns>
+                                    </TableView>
+                                    <Label alignment="CENTER" prefHeight="17.0" prefWidth="547.0" text="PRIMARY LEVEL RESULTS" />
+                                    <TableView fx:id="PRIMARYresultTable" prefHeight="439.0" prefWidth="1100.0">
+                                       <columns>
+                                          <TableColumn fx:id="column_sName1" prefWidth="114.0" text="SURNAME" />
+                                          <TableColumn fx:id="column_fName1" prefWidth="127.0" text="FIRST NAME" />
+                                          <TableColumn fx:id="column_StudentID1" prefWidth="42.0" text="S.ID" />
+                                          <TableColumn fx:id="column_Class1" prefWidth="77.0" text="CLASS" />
+                                          <TableColumn fx:id="column_Term1" prefWidth="76.0" text="TERM" />
+                                          <TableColumn fx:id="column_SubjectID1" prefWidth="46.0" text="SUB.ID" />
+                                          <TableColumn fx:id="column_RecordId1" prefWidth="45.0" text="R.ID" />
+                                          <TableColumn fx:id="column_Math1" prefWidth="58.0" text="MATH" visible="false" />
+                                          <TableColumn fx:id="column_maths_cs1" prefWidth="75.0" text="MATH_CS" visible="false" />
+                                          <TableColumn fx:id="column_Eng1" prefWidth="46.0" text="ENG" visible="false" />
+                                          <TableColumn fx:id="column_eng_cs1" prefWidth="75.0" text="ENG_CS" visible="false" />
+                                          <TableColumn fx:id="column_Sci1" prefWidth="46.0" text="SCI" visible="false" />
+                                          <TableColumn fx:id="column_sci_cs1" prefWidth="75.0" text="SCI_CS" visible="false" />
+                                          <TableColumn fx:id="column_RME1" prefWidth="46.0" text="RME" visible="false" />
+                                          <TableColumn fx:id="column_rme_cs1" prefWidth="75.0" text="RME_CS" visible="false" />
+                                          <TableColumn fx:id="column_Fante1" prefWidth="60.0" text="FANTE" visible="false" />
+                                          <TableColumn fx:id="column_fante_cs1" prefWidth="75.0" text="FANTE_CS" visible="false" />
+                                          <TableColumn fx:id="column_SocialStudies1" text="S.STUDIES" visible="false" />
+                                          <TableColumn fx:id="column_sStud_cs1" prefWidth="75.0" text="SSTUD_CS" visible="false" />
+                                          <TableColumn fx:id="column_BDT1" prefWidth="52.0" text="BDT" visible="false" />
+                                          <TableColumn fx:id="column_bdt_cs1" prefWidth="75.0" text="BDT_CS" visible="false" />
+                                          <TableColumn fx:id="column_Numeracy1" prefWidth="83.0" text="NUMERACY" visible="false" />
+                                          <TableColumn fx:id="column_numeracy_cs1" prefWidth="75.0" text="NUMERACY_CS" visible="false" />
+                                          <TableColumn fx:id="column_CreativeArt1" prefWidth="75.0" text="C.ART" visible="false" />
+                                          <TableColumn fx:id="column_cArt_cs1" prefWidth="75.0" text="C.ART_CS" visible="false" />
+                                          <TableColumn fx:id="column_L_iterature1" prefWidth="99.0" text="L.LITERACY" visible="false" />
+                                          <TableColumn fx:id="column_Literacy_cs1" prefWidth="75.0" text="LITERACY_CS" visible="false" />
+                                          <TableColumn fx:id="column_Citizenship_EDU1" minWidth="5.0" prefWidth="67.0" text="C.EDU" visible="false" />
+                                          <TableColumn fx:id="column_cEdu_cs1" prefWidth="75.0" text="C.EDU_CS" visible="false" />
+                                          <TableColumn fx:id="column_Environmental_Stud1" prefWidth="117.0" text="E.STUDIES" visible="false" />
+                                          <TableColumn fx:id="column_eStud_cs1" prefWidth="75.0" text="E.STUDIES_CS" visible="false" />
+                                          <TableColumn fx:id="column_ICT1" prefWidth="75.0" text="ICT" visible="false" />
+                                          <TableColumn fx:id="column_ICT_cs1" prefWidth="75.0" text="ICT_CS" visible="false" />
+                                       </columns>
+                                    </TableView>
+                                 </children>
+                              </VBox>
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </HBox>
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="565.0" prefWidth="569.0">
+               <children>
+                  <AnchorPane prefHeight="56.0" prefWidth="569.0" style="-fx-background-color: #FFEA00;" visible="false" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <HBox layoutX="22.0" layoutY="18.0" spacing="15.0">
+                           <children>
+                              <ComboBox fx:id="combo_class" prefWidth="150.0" promptText="CLASS" />
+                              <ComboBox fx:id="combo_term" layoutX="10.0" layoutY="10.0" prefWidth="150.0" promptText="TERM" />
+                              <Button fx:id="btn_view" defaultButton="true" mnemonicParsing="false" prefHeight="25.0" prefWidth="105.0" text="VIEW" />
+                           </children>
+                        </HBox>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane layoutY="136.0" prefHeight="509.0" prefWidth="569.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="56.0">
+                     <children>
+                        <VBox layoutX="235.0" layoutY="-30.0" prefHeight="482.0" prefWidth="569.0" spacing="5.0" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <children>
+                              <HBox prefHeight="119.0" prefWidth="529.0">
+                                 <children>
+                                    <HBox prefHeight="134.0" prefWidth="133.0">
+                                       <children>
+                                          <ImageView fx:id="imageview" fitHeight="108.0" fitWidth="110.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="/update/userImage.png" />
+                                             </image>
+                                          </ImageView>
+                                       </children>
+                                    </HBox>
+                                    <VBox alignment="CENTER_LEFT" prefHeight="134.0" prefWidth="70.0" spacing="10.0">
+                                       <children>
+                                          <Label text="NAME">
+                                             <font>
+                                                <Font size="19.0" />
+                                             </font>
+                                          </Label>
+                                          <Label layoutX="10.0" layoutY="10.0" text="ID">
+                                             <font>
+                                                <Font size="19.0" />
+                                             </font>
+                                          </Label>
+                                          <Label layoutX="10.0" layoutY="70.0" text="CLASS">
+                                             <font>
+                                                <Font size="19.0" />
+                                             </font>
+                                          </Label>
+                                          <Label layoutX="10.0" layoutY="89.0" text="TERM">
+                                             <font>
+                                                <Font size="19.0" />
+                                             </font>
+                                          </Label>
+                                       </children>
+                                    </VBox>
+                                    <VBox alignment="CENTER_LEFT" layoutX="143.0" layoutY="10.0" prefHeight="134.0" prefWidth="46.0" spacing="10.0">
+                                       <children>
+                                          <Label text=":">
+                                             <font>
+                                                <Font name="System Bold" size="19.0" />
+                                             </font>
+                                          </Label>
+                                          <Label layoutX="10.0" layoutY="10.0" text=":">
+                                             <font>
+                                                <Font name="System Bold" size="19.0" />
+                                             </font>
+                                          </Label>
+                                          <Label layoutX="10.0" layoutY="70.0" text=":">
+                                             <font>
+                                                <Font name="System Bold" size="19.0" />
+                                             </font>
+                                          </Label>
+                                          <Label layoutX="10.0" layoutY="105.0" text=":">
+                                             <font>
+                                                <Font name="System Bold" size="19.0" />
+                                             </font>
+                                          </Label>
+                                       </children>
+                                    </VBox>
+                                    <VBox alignment="CENTER_LEFT" prefHeight="134.0" prefWidth="319.0" spacing="10.0">
+                                       <children>
+                                          <Label fx:id="lbl_fullname">
+                                             <font>
+                                                <Font size="19.0" />
+                                             </font>
+                                          </Label>
+                                          <Label fx:id="lbl_id" layoutX="10.0" layoutY="10.0">
+                                             <font>
+                                                <Font size="19.0" />
+                                             </font>
+                                          </Label>
+                                          <Label fx:id="lbl_class" layoutX="10.0" layoutY="86.0">
+                                             <font>
+                                                <Font size="19.0" />
+                                             </font>
+                                          </Label>
+                                          <Label fx:id="lbl_term" layoutX="10.0" layoutY="105.0">
+                                             <font>
+                                                <Font size="19.0" />
+                                             </font>
+                                          </Label>
+                                       </children>
+                                    </VBox>
+                                 </children>
+                              </HBox>
+                              <GridPane alignment="CENTER" gridLinesVisible="true" prefHeight="279.0" prefWidth="353.0">
+                                 <columnConstraints>
+                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                 </columnConstraints>
+                                 <rowConstraints>
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                 </rowConstraints>
+                                 <VBox.margin>
+                                    <Insets top="20.0" />
+                                 </VBox.margin>
+                                 <children>
+                                    <Label alignment="TOP_LEFT" text="SUBJECT" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+                                       <font>
+                                          <Font name="System Bold" size="11.0" />
+                                       </font>
+                                    </Label>
+                                    <Label text="MARKS/GRADE" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+                                       <font>
+                                          <Font name="System Bold" size="11.0" />
+                                       </font>
+                                    </Label>
+                                    <Label text="MATHIEMATICS" GridPane.rowIndex="1">
+                                       <GridPane.margin>
+                                          <Insets left="10.0" />
+                                       </GridPane.margin>
+                                       <font>
+                                          <Font size="11.0" />
+                                       </font>
+                                    </Label>
+                                    <Label text="ENGLISH" GridPane.rowIndex="2">
+                                       <GridPane.margin>
+                                          <Insets left="10.0" />
+                                       </GridPane.margin>
+                                       <font>
+                                          <Font size="11.0" />
+                                       </font>
+                                    </Label>
+                                    <Label text="SCIENCE" GridPane.rowIndex="3">
+                                       <GridPane.margin>
+                                          <Insets left="10.0" />
+                                       </GridPane.margin>
+                                       <font>
+                                          <Font size="11.0" />
+                                       </font>
+                                    </Label>
+                                    <Label text="RME" GridPane.rowIndex="4">
+                                       <padding>
+                                          <Insets left="10.0" />
+                                       </padding>
+                                       <font>
+                                          <Font size="11.0" />
+                                       </font>
+                                    </Label>
+                                    <Label text="FANTE" GridPane.rowIndex="5">
+                                       <GridPane.margin>
+                                          <Insets left="10.0" />
+                                       </GridPane.margin>
+                                       <font>
+                                          <Font size="11.0" />
+                                       </font>
+                                    </Label>
+                                    <Label text="SOCIAL STUDIES" GridPane.rowIndex="6">
+                                       <GridPane.margin>
+                                          <Insets left="10.0" />
+                                       </GridPane.margin>
+                                       <font>
+                                          <Font size="11.0" />
+                                       </font>
+                                    </Label>
+                                    <Label text="BDT" GridPane.rowIndex="7">
+                                       <GridPane.margin>
+                                          <Insets left="10.0" />
+                                       </GridPane.margin>
+                                       <font>
+                                          <Font size="11.0" />
+                                       </font>
+                                    </Label>
+                                    <Label text="NUMERACY" GridPane.rowIndex="8">
+                                       <GridPane.margin>
+                                          <Insets left="10.0" />
+                                       </GridPane.margin>
+                                       <font>
+                                          <Font size="11.0" />
+                                       </font>
+                                    </Label>
+                                    <Label text="CREATIVE ART" GridPane.rowIndex="9">
+                                       <padding>
+                                          <Insets left="10.0" />
+                                       </padding>
+                                       <font>
+                                          <Font size="11.0" />
+                                       </font>
+                                    </Label>
+                                    <Label text="LANGUAGE AND LITERACY" GridPane.rowIndex="10">
+                                       <padding>
+                                          <Insets left="10.0" />
+                                       </padding>
+                                       <font>
+                                          <Font size="11.0" />
+                                       </font>
+                                    </Label>
+                                    <Label text="CITIZENSHIP EDUCATION" GridPane.rowIndex="11">
+                                       <padding>
+                                          <Insets left="10.0" />
+                                       </padding>
+                                       <font>
+                                          <Font size="11.0" />
+                                       </font>
+                                    </Label>
+                                    <Label text="ENVIRONMENTAL STUDIES" GridPane.rowIndex="12">
+                                       <padding>
+                                          <Insets left="10.0" />
+                                       </padding>
+                                       <font>
+                                          <Font size="11.0" />
+                                       </font>
+                                    </Label>
+                                    <Label text="ICT" GridPane.rowIndex="13">
+                                       <padding>
+                                          <Insets left="10.0" />
+                                       </padding>
+                                       <font>
+                                          <Font size="11.0" />
+                                       </font>
+                                    </Label>
+                                    <Label fx:id="lbl_math" alignment="CENTER" textAlignment="CENTER" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER" />
+                                    <Label fx:id="lbl_english" alignment="CENTER" textAlignment="CENTER" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER" />
+                                    <Label fx:id="lbl_science" alignment="CENTER" textAlignment="CENTER" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER" />
+                                    <Label fx:id="lbl_rme" alignment="CENTER" textAlignment="CENTER" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="4" GridPane.valignment="CENTER" />
+                                    <Label fx:id="lbl_fante" alignment="CENTER" textAlignment="CENTER" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="5" GridPane.valignment="CENTER" />
+                                    <Label fx:id="lbl_social" alignment="CENTER" textAlignment="CENTER" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="6" GridPane.valignment="CENTER" />
+                                    <Label fx:id="lbl_bdt" alignment="CENTER" textAlignment="CENTER" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="7" GridPane.valignment="CENTER" />
+                                    <Label fx:id="lbl_numeracy" alignment="CENTER" textAlignment="CENTER" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="8" GridPane.valignment="CENTER" />
+                                    <Label fx:id="lbl_cArt" alignment="CENTER" textAlignment="CENTER" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="9" GridPane.valignment="CENTER" />
+                                    <Label fx:id="lbl_languageLiteracy" alignment="CENTER" textAlignment="CENTER" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="10" GridPane.valignment="CENTER" />
+                                    <Label fx:id="lbl_cEcuation" alignment="CENTER" textAlignment="CENTER" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="11" GridPane.valignment="CENTER" />
+                                    <Label fx:id="lbl_eStudies" alignment="CENTER" textAlignment="CENTER" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="12" GridPane.valignment="CENTER" />
+                                    <Label fx:id="lbl_ict" alignment="CENTER" textAlignment="CENTER" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="13" GridPane.valignment="CENTER" />
+                                    <Label text="CLASS SCORE (50%)" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+                                       <font>
+                                          <Font name="System Bold" size="11.0" />
+                                       </font>
+                                    </Label>
+                                    <Label text="EXAM SCORE(50%)" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+                                       <font>
+                                          <Font name="System Bold" size="11.0" />
+                                       </font>
+                                    </Label>
+                                    <Label fx:id="lbl_mathClassScore" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER" />
+                                    <Label fx:id="lbl_engClassScore" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER" />
+                                    <Label fx:id="lbl_sciClassScore" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER" />
+                                    <Label fx:id="lbl_rmeClassScore" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="4" GridPane.valignment="CENTER" />
+                                    <Label fx:id="lbl_FanteClassScore" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="5" GridPane.valignment="CENTER" />
+                                    <Label fx:id="lbl_socialClassScore" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="6" GridPane.valignment="CENTER" />
+                                    <Label fx:id="lbl_bdtClassScore" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="7" GridPane.valignment="CENTER" />
+                                    <Label fx:id="lbl_numClassScore" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="8" GridPane.valignment="CENTER" />
+                                    <Label fx:id="lbl_artClassScore" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="9" GridPane.valignment="CENTER" />
+                                    <Label fx:id="lbl_literacyClassScore" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="10" GridPane.valignment="CENTER" />
+                                    <Label fx:id="lbl_citizenClassScore" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="11" GridPane.valignment="CENTER" />
+                                    <Label fx:id="lbl_envClassScore" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="12" GridPane.valignment="CENTER" />
+                                    <Label fx:id="lbl_ictClassScore" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="13" GridPane.valignment="CENTER" />
+                                    <Label fx:id="lbl_mathExamScore" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER" />
+                                    <Label fx:id="lbl_engExamScore" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER" />
+                                    <Label fx:id="lbl_sciExamScore" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER" />
+                                    <Label fx:id="lbl_rmeExamScore" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="4" GridPane.valignment="CENTER" />
+                                    <Label fx:id="lbl_fanteExamScore" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="5" GridPane.valignment="CENTER" />
+                                    <Label fx:id="lbl_socialExamScore" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="6" GridPane.valignment="CENTER" />
+                                    <Label fx:id="lbl_bdtExamScore" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="7" GridPane.valignment="CENTER" />
+                                    <Label fx:id="lbl_numExamScore" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="8" GridPane.valignment="CENTER" />
+                                    <Label fx:id="lbl_artExamScore" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="9" GridPane.valignment="CENTER" />
+                                    <Label fx:id="lbl_literacyExamScore" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="10" GridPane.valignment="CENTER" />
+                                    <Label fx:id="lbl_citizenExamScore" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="11" GridPane.valignment="CENTER" />
+                                    <Label fx:id="lbl_envExamScore" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="12" GridPane.valignment="CENTER" />
+                                    <Label fx:id="lbl_ictExamScore" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="13" GridPane.valignment="CENTER" />
+                                 </children>
+                              </GridPane>
+                              <Button fx:id="btn_print" defaultButton="true" mnemonicParsing="false" style="/home/sample_button_style.css" text="GENERATE REPORT" />
+                           </children>
+                           <padding>
+                              <Insets left="20.0" right="20.0" top="20.0" />
+                           </padding>
+                        </VBox>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </AnchorPane>
+         </items>
+      </SplitPane>
+   </children>
+</AnchorPane>

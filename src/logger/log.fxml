@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.materialicons.MaterialIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="645.0" prefWidth="1140.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="logger.logController">
+    <children>
+        <Pane prefHeight="80.0" prefWidth="1140.0" style="-fx-background-color: #0078D7;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="15.0">
+            <children>
+                <Label alignment="CENTER" layoutX="116.0" layoutY="7.0" prefHeight="69.0" prefWidth="246.0" text="USERS LOG" textAlignment="CENTER" textFill="WHITE">
+                    <font>
+                        <Font size="41.0" />
+                    </font>
+                </Label>
+                <MaterialIconView fill="WHITE" glyphName="EVENT_AVAILABLE" layoutX="41.0" layoutY="67.0" size="60" />
+            </children>
+        </Pane>
+      <AnchorPane prefHeight="636.0" prefWidth="1138.0" style="-fx-background-color: #ffffff;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="120.0">
+         <children>
+            <TableView fx:id="logTable" layoutX="79.0" layoutY="68.0" prefHeight="412.0" prefWidth="888.0" AnchorPane.bottomAnchor="34.0" AnchorPane.leftAnchor="80.0" AnchorPane.rightAnchor="80.0" AnchorPane.topAnchor="79.0">
+               <columns>
+                  <TableColumn fx:id="column_id" prefWidth="167.0" text="USER ID" />
+                  <TableColumn fx:id="column_Username" prefWidth="175.0" text="USER NAME" />
+                  <TableColumn fx:id="column_name" prefWidth="219.0" text="NAME" />
+                  <TableColumn fx:id="column_loggedIn" prefWidth="223.0" text="LOGGED IN" />
+                  <TableColumn fx:id="column_loggedOut" prefWidth="233.0" text="LOGGED OUT" />
+               </columns>
+            </TableView>
+            <JFXButton fx:id="btn_refreshLog" buttonType="RAISED" layoutX="380.0" layoutY="21.0" prefHeight="40.0" prefWidth="374.0" stylesheets="/home/sample_button_style.css" text="REFRESH LOGS" AnchorPane.leftAnchor="380.0" AnchorPane.rightAnchor="386.0" AnchorPane.topAnchor="21.0" />
+            <JFXButton fx:id="btn_printAll" alignment="CENTER" buttonType="RAISED" layoutX="474.0" layoutY="489.0" stylesheets="/home/sample_button_style.css" text="PRINT DATA" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
+         </children>
+      </AnchorPane>
+    </children>
+   <padding>
+      <Insets bottom="20.0" left="10.0" right="10.0" />
+   </padding>
+</AnchorPane>

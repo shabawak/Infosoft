@@ -1,0 +1,9 @@
+.clearSelection
+{
+-fx-background-color : transparent;
+
+}
+.clearSelection:hover
+{
+-fx-background-color : #64b5f6;
+}

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="295.0" prefWidth="535.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="menubar.AboutController">
+   <children>
+      <AnchorPane prefHeight="200.0" prefWidth="535.0" style="-fx-background-color: #039BE5;">
+         <children>
+            <VBox alignment="CENTER" layoutX="221.0" layoutY="33.0">
+               <children>
+                  <HBox>
+                     <children>
+                        <Label text="info">
+                           <font>
+                              <Font name="Impact" size="65.0" />
+                           </font>
+                        </Label>
+                        <Label text="SOFT" textFill="WHITE">
+                           <font>
+                              <Font name="Impact" size="65.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <Label text="Student Information System" textFill="WHITE">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </VBox>
+            <ImageView fitHeight="117.0" fitWidth="150.0" layoutX="78.0" layoutY="23.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../report_logo.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="223.0" layoutY="140.0" prefHeight="27.0" prefWidth="68.0" text="v.2019.1" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <Label alignment="CENTER" layoutX="121.0" layoutY="246.0" text="Copyright © 2019  Wakies App Studio. All right reserved." textAlignment="CENTER" AnchorPane.bottomAnchor="32.0" AnchorPane.leftAnchor="1.0" AnchorPane.rightAnchor="0.0" />
+      <HBox layoutX="121.0" layoutY="209.0" prefWidth="291.0" spacing="5.0">
+         <children>
+            <Label prefHeight="24.0" prefWidth="159.0" text="Send the developer an e-mail:" />
+            <Hyperlink prefHeight="16.0" prefWidth="127.0" text="shabawak@gmail.com" textAlignment="CENTER" />
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

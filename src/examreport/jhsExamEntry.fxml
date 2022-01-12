@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="parent" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="501.0" prefWidth="989.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="examreport.JHS_examEntryController">
+   <children>
+      <Pane layoutX="332.0" layoutY="116.0" prefHeight="314.0" prefWidth="571.0" style="-fx-background-color: #f0f0f0;">
+         <effect>
+            <DropShadow />
+         </effect>
+      </Pane>
+      <AnchorPane layoutX="10.0" layoutY="74.0" minHeight="0.0" minWidth="0.0" prefHeight="578.0" prefWidth="990.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Pane layoutX="3.0" layoutY="10.0" prefHeight="446.0" prefWidth="301.0" style="-fx-background-color: #636363;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <HBox layoutX="128.0" layoutY="141.0" prefHeight="19.0" prefWidth="163.0" spacing="2.0">
+                     <children>
+                        <Text fx:id="txt_firstName" fill="WHITE" layoutX="10.0" layoutY="25.0" strokeType="OUTSIDE" strokeWidth="0.0">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Text>
+                        <Text fx:id="txt_lastName" fill="WHITE" layoutX="10.0" layoutY="25.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="147.80340576171875">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </HBox>
+                  <Label layoutX="35.0" layoutY="142.0" text="Name : " textFill="WHITE" />
+                  <VBox layoutX="122.0" layoutY="170.892578125" spacing="11.0">
+                     <children>
+                        <Text fx:id="txt_studentID" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="61.500000547617674">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Text>
+                        <Text fx:id="txt_class" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="61.500000547617674">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Text>
+                        <Text fx:id="txt_REcord" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="56.99999950826168">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </VBox>
+                  <Label layoutX="35.0" layoutY="172.0" text="Student ID : " textFill="WHITE" />
+                  <Label layoutX="35.0" layoutY="202.0" text="Class : " textFill="WHITE" />
+                  <Label layoutX="35.0" layoutY="112.0" text="RECORD" textFill="WHITE" underline="true" />
+                  <Label layoutX="35.0" layoutY="232.0" text="RECORD ID :" textFill="WHITE" />
+                  <Pane layoutX="14.0" layoutY="269.0" prefHeight="51.0" prefWidth="140.0" style="-fx-background-color: #FFFFFF;">
+                     <children>
+                        <JFXComboBox fx:id="combo_term" focusColor="RED" labelFloat="true" layoutX="10.0" layoutY="13.0" prefHeight="25.0" prefWidth="120.0" promptText="Term" unFocusColor="#dd1a1a" />
+                     </children>
+                  </Pane>
+               </children>
+            </Pane>
+            <HBox layoutX="867.0" layoutY="456.0" spacing="10.0" AnchorPane.bottomAnchor="18.0" AnchorPane.rightAnchor="25.0">
+               <children>
+                  <JFXButton fx:id="btn_Add" buttonType="RAISED" stylesheets="/home/sample_button_style.css" text="ADD" />
+                  <JFXButton fx:id="btn_Save" buttonType="RAISED" stylesheets="/home/sample_button_style.css" text="SAVE" visible="false" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" layoutX="467.0" layoutY="53.0" spacing="5.0">
+               <children>
+                  <Label text="RECORD ID" />
+                  <Text fx:id="txt_recordID" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="78.99999535083771">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Text>
+                  <Label text="SUBJECT ID :" />
+                  <Text fx:id="txt_subjectID" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="61.500000547617674">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Text>
+               </children>
+            </HBox>
+            <GridPane hgap="10.0" layoutX="365.0" layoutY="195.0" prefWidth="187.0" vgap="5.0">
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <Label text="MATHEMATICS" />
+                  <Label text="ENGLISH" GridPane.rowIndex="1" />
+                  <Label text="SCIENCE" GridPane.rowIndex="2" />
+                  <Label text="RME" GridPane.rowIndex="3" />
+                  <TextField fx:id="textField_math" alignment="CENTER" prefHeight="25.0" prefWidth="46.0" text="0" GridPane.columnIndex="1" />
+                  <TextField fx:id="textField_eng" alignment="CENTER" prefHeight="25.0" prefWidth="33.0" text="0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                  <TextField fx:id="textField_intScience" alignment="CENTER" prefHeight="25.0" prefWidth="33.0" text="0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                  <TextField fx:id="textField_rme" alignment="CENTER" prefHeight="26.0" prefWidth="46.0" text="0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                  <TextField fx:id="txt_mathClassSscore" prefHeight="25.0" prefWidth="39.0" text="0" GridPane.columnIndex="2" />
+                  <TextField fx:id="txt_engClassScore" prefHeight="25.0" prefWidth="33.0" text="0" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                  <TextField fx:id="txt_rmeClassScore" prefHeight="25.0" prefWidth="33.0" text="0" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+                  <TextField fx:id="txt_sciClassScore" prefHeight="25.0" prefWidth="33.0" text="0" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+               </children>
+            </GridPane>
+            <GridPane hgap="10.0" layoutX="609.0" layoutY="195.0" prefHeight="116.0" prefWidth="216.0" vgap="5.0">
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="100.0" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="48.0" minWidth="10.0" prefWidth="42.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="43.0" minWidth="10.0" prefWidth="40.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <Label text="ICT" GridPane.rowIndex="3" />
+                  <TextField fx:id="textField_ict" alignment="CENTER" prefHeight="25.0" prefWidth="33.0" text="0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                  <TextField fx:id="txt_ictClassScore" prefHeight="25.0" prefWidth="33.0" text="0" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+                  <Label text="BDT" GridPane.rowIndex="2" />
+                  <TextField fx:id="textField_bdt" alignment="CENTER" prefHeight="25.0" prefWidth="33.0" text="0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                  <TextField fx:id="txt_bdtClassScore" prefHeight="25.0" prefWidth="33.0" text="0" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+                  <Label text="SOCIAL STUDIES" GridPane.rowIndex="1" />
+                  <TextField fx:id="textField_sStudies" alignment="CENTER" prefHeight="25.0" prefWidth="33.0" text="0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                  <TextField fx:id="txt_sStudClassScore" prefHeight="25.0" prefWidth="33.0" text="0" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                  <Label text="FANTE" />
+                  <TextField fx:id="textField_fante" alignment="CENTER" prefHeight="25.0" prefWidth="33.0" text="0" GridPane.columnIndex="1" />
+                  <TextField fx:id="txt_fanteClassScore" prefHeight="25.0" prefWidth="33.0" text="0" GridPane.columnIndex="2" />
+               </children>
+            </GridPane>
+            <Label layoutX="464.0" layoutY="121.0" prefHeight="59.0" prefWidth="34.0" text="Exam Score 50%" wrapText="true" />
+            <Label layoutX="725.0" layoutY="126.0" prefHeight="59.0" prefWidth="34.0" text="Exam Score 50%" wrapText="true" />
+            <Label layoutX="516.0" layoutY="124.0" prefHeight="59.0" prefWidth="34.0" text="Class Score 50%" wrapText="true" />
+            <Label layoutX="779.0" layoutY="123.0" prefHeight="59.0" prefWidth="34.0" text="Class Score 50%" wrapText="true" />
+         </children>
+      </AnchorPane>
+      <Pane layoutX="280.0" layoutY="26.0" prefHeight="44.0" prefWidth="990.0" style="-fx-background-color: #0078D7;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label alignment="CENTER" layoutX="2.0" layoutY="3.0" prefHeight="33.0" prefWidth="989.0" text="JHS EXAMINATION RECORD ENTRY" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

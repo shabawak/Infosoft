@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="dist">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/src/external libraries/jasperreports_librarys/dist/jasperreports-applet-5.5.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/external libraries/jasperreports_librarys/dist/jasperreports-fonts-5.5.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/external libraries/jasperreports_librarys/dist/jasperreports-javaflow-5.5.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/external libraries/jasperreports_librarys/dist/jasperreports-5.5.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

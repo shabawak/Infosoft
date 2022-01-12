@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="external libraries">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/src/external libraries/jfoenix-8.0.8.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/external libraries/charm-glisten-4.4.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/external libraries/sqlite-jdbc-3.27.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/external libraries/charm-glisten-5.0.2.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

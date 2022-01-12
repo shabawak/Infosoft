@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="update.parentWardCountCotroller">
+   <children>
+      <Label alignment="CENTER" layoutX="107.0" layoutY="32.0" prefHeight="53.0" prefWidth="600.0" style="-fx-background-color: #0078D7;" text="PARENT WARD COUNT" textFill="WHITE" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <TableView fx:id="wardCountTable" layoutY="97.0" prefHeight="303.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="97.0">
+        <columns>
+            <TableColumn fx:id="ward_Id" prefWidth="85.0" text="ID" visible="false" />
+          <TableColumn fx:id="lastName" prefWidth="227.0" text="LAST NAME"  />
+          <TableColumn fx:id="firstName" prefWidth="196.0" text="FIRST NAME" />
+          <TableColumn fx:id="gender" prefWidth="196.0" text="GENDER" visible="false" />
+          <TableColumn fx:id="dob" prefWidth="196.0" text="DOB" visible="false" />
+            <TableColumn fx:id="wardClass" prefWidth="85.0" text="CLASS" />
+        </columns>
+      </TableView>
+      <HBox alignment="CENTER" layoutX="203.0" layoutY="68.0" spacing="5.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <children>
+            <Label text="Number of wards" />
+            <Label fx:id="lbl_count" layoutX="10.0" layoutY="10.0" text="0">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>
